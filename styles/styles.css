@@ -1,0 +1,26 @@
+/* styles.css */
+.header {
+    background-color: #71CBF4;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.search-bar {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.links a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
