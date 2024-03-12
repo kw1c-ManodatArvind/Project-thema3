@@ -1,26 +1,67 @@
-/* styles.css */
-.header {
-    background-color: #71CBF4;
-    padding: 10px;
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
-.logo img {
-    height: 40px;
-    width: auto;
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.search-bar {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.links a {
-    margin-right: 10px;
-    color: #fff;
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
     text-decoration: none;
+    color: white;
 }
+
+.logo {
+    height: 50px; /* aanpassen aan de gewenste hoogte */
+}
+
+.header-img {
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.square-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.square-images img {
+    width: 100%;
+    max-width: 200px; /* aanpassen aan de gewenste breedte */
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.blue-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.blue-box {
+    background-color: #71cbf4;
+    color: white;
+    padding: 20px;
+}
+
