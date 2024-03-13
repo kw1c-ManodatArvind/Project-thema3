@@ -1,0 +1,294 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 50px; /* aanpassen aan de gewenste hoogte */
+}
+.header-img {
+    width: 100%;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.separator {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.image-container {
+    background-color: #fff;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.popular-destinations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.destination {
+    position: relative;
+}
+
+.destination img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.separator {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.image-container {
+    background-color: #fff;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.popular-destinations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.destination {
+    position: relative;
+}
+
+.destination img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.separator {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.image-container {
+    background-color: #fff;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.popular-destinations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.destination {
+    position: relative;
+}
+
+.destination img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(150, 150, 150, 0.7); /* Grijs met lichte transparantie */
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+.white-space {
+    height: 20px;
+    background-color: #fff;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.options .option {
+    cursor: pointer;
+}
+
+.spacer {
+    width: 20px;
+}
+
+.service-info {
+    padding: 20px 0;
+    display: none; /* Inhoud is standaard verborgen */
+}
+.footer {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.footer-left h3,
+.footer-center h3,
+.footer-right h3 {
+    color: #003366;
+}
+
+.footer-left ul,
+.footer-center ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li,
+.footer-center ul li,
+.footer-right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.newsletter {
+    background-color: #f2f2f2; /* Grijs vlak */
+    padding: 20px 0;
+}
+
+.newsletter span,
+.newsletter p {
+    color: #003366; /* Donkerblauwe tekstkleur */
+}
+
+.newsletter form input[type="email"],
+.newsletter form button {
+    font-size: 14px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    color: #003366; /* Donkerblauwe tekstkleur */
+}
+
+.newsletter form input[type="email"] {
+    width: 200px;
+}
+
+.newsletter form button {
+    background-color: #71cbf4;
+    cursor: pointer;
+}
+
+.footer-logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+}
+
+.work-at-tui {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.work-at-tui a {
+    color: #003366;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #71cbf4; /* Blauw vlakje */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.work-at-tui a:hover {
+    text-decoration: underline;
+}
+.navbarOnder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
