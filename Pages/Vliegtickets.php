@@ -9,13 +9,13 @@
 </head>
 <body>
 <div class="navbar" style="background-color: #71cbf4;">
-    <img src="../images/Logo.jpg" alt="Logo" class="logo">
+    <img src="images/logo.png" alt="Logo" class="logo">
     <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Vakanties</a></li>
-        <li><a href="#">Cruises</a></li>
-        <li><a href="#">Service & Contact</a></li>
-        <li><a href="#">Vliegtickets</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="Pages/Cruises.php">Cruises</a></li>
+        <li><a href="Pages/ServiceContact.php">Service & Contact</a></li>
+        <li><a href="Pages/Vliegtickets.php">Vliegtickets</a></li>
+        <li><a href="Pages/Vragenlijst.php">Vragenlijst</a></li>
     </ul>
 </div>
 <img src="../images/Wolken.jpg" alt="Header Image" class="header-img">
@@ -134,3 +134,5 @@
         <div class="navbarOnder" style="background-color: #71cbf4;">
     </div>
 </div>
+</body>
+</html>
