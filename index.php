@@ -23,7 +23,7 @@
         <img src="images/VrouwMetKind.jpg" alt="Image 1">
         <img src="images/Vrouw.jpg" alt="Image 2">
         <img src="images/Familie.jpg" alt="Image 3">
-        <img src="images/Logo1.jpg" alt="Image 4">
+        <img src="images/Logo1.jpg" alt="Image 4">t
     </div>
     <p class="description">Relaxed boeken met TUI Garanties en Verzekeringen.</p>
     <div class="blue-boxes">
