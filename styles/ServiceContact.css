@@ -1,0 +1,79 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 50px; /* aanpassen aan de gewenste hoogte */
+}
+
+.header-img {
+    width: 100%;
+}
+body {
+    text-align: center; /* Centreren van de inhoud van de body */
+}
+
+.container {
+    display: flex; /* Gebruik flexbox voor layout */
+    justify-content: center; /* Horizontaal centreren */
+    margin-top: 50px; /* Ruimte bovenaan */
+}
+
+.decorative-links {
+    display: inline-block; /* Zet de rijen naast elkaar */
+    vertical-align: top;
+    margin: 0 10px; /* Ruimte tussen de rijen */
+    text-align: left; /* Links uitlijnen van de links */
+}
+
+.decorative-links h2 {
+    color: navy;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.decorative-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.decorative-links li {
+    margin-bottom: 15px;
+}
+
+.decorative-links a {
+    color: navy;
+    text-decoration: none;
+}
+
+.decorative-links a:hover {
+    text-decoration: underline;
+}
+
+.decorative-links .arrow {
+    margin-left: 5px;
+}
