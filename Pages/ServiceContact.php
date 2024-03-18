@@ -51,3 +51,44 @@
         </ul>
     </div>
 </div>
+<div class="more-help">
+    <h2>Meer hulp nodig?</h2>
+    <div class="help-options">
+        <div class="help-option">
+            <div class="icon">
+                <!-- SVG code voor telefoon  -->
+            </div>
+            <p>Bel het TUI Customer Services Center.</p>
+        </div>
+        <div class="help-option">
+            <div class="icon">
+                <!-- SVG code voor tekstballon -->
+            </div>
+            <p>Social media<br>Stel je vraag aan ons social care team via Facebook of Twitter. Wij staan 7 dagen per week voor je klaar.<br>Ma t/m zat 08:00 - 20:00<br>Zondag 09:00 - 20:00</p>
+        </div>
+        <div class="help-option">
+            <div class="icon">
+                <!-- SVG code voor pinnentje -->
+            </div>
+            <p>Reisbureaus en reisadvies<br>Bezoek één van onze 130 TUI Reisbureaus of neem contact op met een reisadviseur van TUIatHome.<br><a href="#">TUI reisbureaus</a><br><a href="#">Maak een afspraak</a><br><a href="#">TUIatHome</a></p>
+        </div>
+        <div class="help-option">
+            <div class="icon">
+                <!-- SVG code voor telefoon -->
+            </div>
+            <p>TUI App<br>Je complete vakantie in een app.</p>
+        </div>
+        <div class="help-option">
+            <div class="icon">
+                <!-- SVG code voor potlood -->
+            </div>
+            <p>Klachten en suggesties<br>Is je reis niet volledig naar wens verlopen? Meld dit binnen twee maanden na terugkomst (volgens ANVR-voorwaarden).</p>
+        </div>
+        <div class="help-option">
+            <div class="icon">
+                <!-- SVG code voor klok -->
+            </div>
+            <p>Vluchtvertraging TUI fly<br>Wil je een claim indienen voor een vertraging met TUI fly? Je kan je melding maken na de einddatum van je reis.</p>
+        </div>
+    </div>
+</div>
