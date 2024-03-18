@@ -86,82 +86,169 @@ body {
 .more-help h2 {
     color: navy;
     font-size: 36px;
+    font-weight: bold;
 }
 
 .help-options {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .help-option {
     width: calc(33.33% - 10px);
-    background-color: #71cbf4;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .help-option h3 {
-    color: white;
+    color: navy;
     font-size: 18px;
+    font-weight: bold;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .help-option p {
-    color: white;
+    color: navy;
     font-size: 14px;
+    font-weight: bold;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 .help-option svg {
-    width: 20px;
-    height: 20px;
-    fill: white;
-    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    fill: navy;
 }
 
-.help-option:last-child {
-    margin-right: 0;
+/* Maak de vlakken onzichtbaar */
+.help-option {
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
-.more-info {
-    margin-top: 50px;
+.help-option:hover {
+    background-color: rgba(113, 203, 244, 0.5); /* Toon een lichte achtergrondkleur bij hover */
 }
-
-.more-info h2 {
+.about-tui h2 {
     color: navy;
-    font-size: 36px;
+    font-weight: bold;
 }
 
-.help-info {
+.about-tui p {
+    color: navy;
+}
+
+.social-media-header {
     margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    font-weight: bold;
+    color: navy;
 }
 
-.help-info .info-box {
-    width: calc(50% - 10px);
-    background-color: #71cbf4;
-    padding: 10px;
-    border-radius: 5px;
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.footer-left h3,
+.footer-center h3,
+.footer-right h3 {
+    color: #003366;
+}
+
+.footer-left ul,
+.footer-center ul,
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-left ul li,
+.footer-center ul li,
+.footer-right ul li {
     margin-bottom: 10px;
 }
 
-.help-info .info-box h3 {
-    color: white;
-    font-size: 18px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.footer-bottom {
+    margin-top: 20px;
 }
 
-.help-info .info-box p {
-    color: white;
+.newsletter {
+    background-color: #f2f2f2; /* Grijs vlak */
+    padding: 20px 0;
+}
+
+.newsletter span,
+.newsletter p {
+    color: #003366; /* Donkerblauwe tekstkleur */
+}
+
+.newsletter form input[type="email"],
+.newsletter form button {
     font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    color: #003366; /* Donkerblauwe tekstkleur */
+}
+
+.newsletter form input[type="email"] {
+    width: 200px;
+}
+
+.newsletter form button {
+    background-color: #71cbf4;
+    cursor: pointer;
+}
+
+.footer-logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+}
+
+.work-at-tui {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.work-at-tui a {
+    color: #003366;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #71cbf4; /* Blauw vlakje */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.work-at-tui a:hover {
+    text-decoration: underline;
+}
+.navbarOnder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
 }

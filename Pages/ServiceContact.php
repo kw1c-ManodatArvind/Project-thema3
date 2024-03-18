@@ -92,3 +92,71 @@
         </div>
     </div>
 </div>
+<div class="about-tui">
+    <h2>Over TUI Nederland</h2>
+    <p>Hier vind je informatie over TUI Nederland, onze merken, werken bij TUI Nederland en onze.</p>
+    <p class="social-media-header">Volg TUI op social media</p>
+    <div class="social-media">
+        <a href="https://www.youtube.com/"><img src="youtube-logo.svg" alt="YouTube"></a>
+        <a href="https://www.instagram.com/"><img src="instagram-logo.svg" alt="Instagram"></a>
+        <a href="https://www.facebook.com/"><img src="facebook-logo.svg" alt="Facebook"></a>
+        <a href="https://twitter.com/"><img src="twitter-logo.svg" alt="Twitter"></a>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-left">
+        <h3>Goed voorbereid op reis</h3>
+        <ul>
+            <li><a href="#">TUI app</a></li>
+            <li><a href="#">Online inchecken Transavia</a></li>
+            <li><a href="#">Excursies op de bestemming</a></li>
+            <li><a href="#">Goed voorbereid op reis</a></li>
+            <li><a href="#">Verzekeringen</a></li>
+            <li><a href="#">Autohuur</a></li>
+            <li><a href="#">Parkeren op de luchthaven</a></li>
+            <li><a href="#">Luchthavenvervoer</a></li>
+            <li><a href="#">Visum & vaccinaties</a></li>
+            <li><a href="#">Bekijk alle extra's</a></li>
+        </ul>
+    </div>
+    <div class="footer-center">
+        <h3>Vliegen met TUI fly</h3>
+        <ul>
+            <li><a href="#">Online inchecken TUI fly</a></li>
+            <li><a href="#">Stoelreservering</a></li>
+            <li><a href="#">Bagage</a></li>
+            <li><a href="#">Bekijk alle TUI fly services</a></li>
+            <li><a href="#">TUI Cargo</a></li>
+        </ul>
+    </div>
+    <div class="footer-right">
+        <h3>TUI Nederland</h3>
+        <ul>
+            <li><a href="#">Over TUI Nederland</a></li>
+            <li><a href="#">Pers en media</a></li>
+            <li><a href="#">Voorwaarden</a></li>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Copyright</a></li>
+            <li><a href="#">Privacy & cookies</a></li>
+            <li><a href="#">Klacht?</a></li>
+            <li><a href="#">Deel een zorg</a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <div class="work-at-tui">
+            <a href="#">Werken bij TUI</a>
+        </div>
+    </div>
+</div>
+<div class="newsletter">
+    <span>Nieuwsbrief</span>
+    <p>Krijg wekelijks de beste deals in je mailbox.</p>
+    <form action="#" method="POST">
+        <input type="email" name="email" placeholder="Vul je e-mailadres in" required>
+        <button type="submit">Aanmelden</button>
+    </form>
+    <div class="navbarOnder" style="background-color: #71cbf4;">
+    </div>
+</div>
+</body>
+</html>
