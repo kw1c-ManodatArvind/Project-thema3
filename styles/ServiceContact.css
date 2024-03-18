@@ -66,14 +66,102 @@ body {
 }
 
 .decorative-links a {
+    display: block; /* Maak van de links blokelementen */
+    padding: 20px; /* Ruimte binnen het vlakje */
+    border: 2px solid navy; /* Rand rondom het vlakje */
+    border-radius: 5px; /* Afgeronde hoeken */
     color: navy;
     text-decoration: none;
 }
 
 .decorative-links a:hover {
-    text-decoration: underline;
+    background-color: #71cbf4; /* Achtergrondkleur veranderen bij hover */
+    color: white; /* Tekstkleur veranderen bij hover */
+    text-decoration: none;
+}
+.more-help {
+    margin-top: 50px;
 }
 
-.decorative-links .arrow {
-    margin-left: 5px;
+.more-help h2 {
+    color: navy;
+    font-size: 36px;
+}
+
+.help-options {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.help-option {
+    width: calc(33.33% - 10px);
+    background-color: #71cbf4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.help-option h3 {
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.help-option p {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.help-option svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    margin-right: 5px;
+}
+
+.help-option:last-child {
+    margin-right: 0;
+}
+
+.more-info {
+    margin-top: 50px;
+}
+
+.more-info h2 {
+    color: navy;
+    font-size: 36px;
+}
+
+.help-info {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.help-info .info-box {
+    width: calc(50% - 10px);
+    background-color: #71cbf4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.help-info .info-box h3 {
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.help-info .info-box p {
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
