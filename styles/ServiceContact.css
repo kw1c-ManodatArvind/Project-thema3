@@ -147,16 +147,29 @@ body {
     margin-top: 20px;
     font-weight: bold;
     color: navy;
+    float: right;
 }
 
 .social-media {
     margin-top: 10px;
+    float: right;
 }
 
 .social-media a {
     display: inline-block;
     margin-right: 10px;
 }
+.about-tui {
+    text-align: left;
+}
+
+.about-tui .address-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+
 .footer {
     background-color: #f2f2f2;
     padding: 40px 0;
