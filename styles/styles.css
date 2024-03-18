@@ -87,7 +87,23 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    position: relative; /* Hiermee kunnen we de absolute positie van de lijn instellen */
 }
+
+.image-wrapper p {
+    margin-left: 20px;
+}
+
+.image-wrapper:after {
+    content: ''; /* Dit creëert een pseudo-element */
+    position: absolute; /* Absoluut positioneren ten opzichte van de parent */
+    bottom: 0; /* Plaats het onderaan het ouder-element */
+    left: 0; /* Beginnend vanaf de linkerzijde van het ouder-element */
+    width: 100%; /* Neem de volledige breedte in */
+    height: 1px; /* Hoogte van de lijn */
+    background-color: #ccc; /* Kleur van de lijn */
+}
+
 
 hr {
     flex: 1;
