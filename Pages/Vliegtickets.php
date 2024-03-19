@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoo Website</title>
+    <title>Tui Website</title>
     <link rel="stylesheet" href="../styles/vliegtickets.css">
     <script src="../scripts/script.js" defer> </script>
 </head>

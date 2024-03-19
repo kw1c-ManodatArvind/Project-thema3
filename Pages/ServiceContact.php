@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoo Website</title>
+    <title>Tui Website</title>
     <link rel="stylesheet" href="../styles/ServiceContact.css">
     <script src="../scripts/script.js" defer> </script>
 </head>
@@ -21,7 +21,8 @@
 <img src="../images/HeaderPlaatje.jpg" alt="Header Image" class="header-img">
 <div style="text-align: center; margin-top: 20px;">
     <h1 style="color: navy; font-size: 36px;">Service & contact</h1>
-    <h1 style="color: navy; font-size: 36px;">Vraag het onze virtuele assistent </h1>
+    <a href="https://www.tui.nl/contact/"><img src="../images/chatbot.png"></a>
+    <h1 style="color: navy; font-size: 36px;">Klik hierboven op de foto om het te vragen aan onze virtuele assistent</h1>
 </div>
 <div class="decorative-links-container">
     <div class="decorative-links">
