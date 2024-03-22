@@ -7,77 +7,65 @@
 
 <h2>Vul de vragenlijst in:</h2>
 
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+<form method="post" action="resultaten.php">
     <?php
-    // Array met vragen
+    // Array met vragen en opties
     $vragen = array(
-        "Hoe vaak sport je per week?",
-        "Hoeveel uur slaap je gemiddeld per nacht?",
-        "Hoeveel groenten eet je per dag?",
-        "Hoeveel water drink je per dag (in liters)?",
-        "Hoeveel uur besteed je dagelijks aan schermtijd (bijvoorbeeld tv, computer, telefoon)?",
-        "Hoe vaak eet je fastfood per week?",
-        "Hoeveel alcohol drink je per week?",
-        "Hoeveel tijd besteed je aan ontspanning of hobby's?",
-        "Hoe vaak voel je je gestrest?",
-        "Hoe tevreden ben je over je werk/school?",
-        "Hoeveel tijd spendeer je aan sociale activiteiten?",
-        "Hoeveel tijd besteed je aan persoonlijke ontwikkeling?",
-        "Hoeveel tijd besteed je aan relaties (familie, vrienden)?",
-        "Hoeveel tijd besteed je aan het plannen van je dag/week?",
-        "Hoe gezond eet je over het algemeen?"
+        "",
+        "Hoe vaak boekt u een vakantie?",
+        "Wat is uw favoriete vakantiebestemming?",
+        "Welk type accommodatie verkiest u tijdens uw vakantie?",
+        "Wat is uw belangrijkste factor bij het kiezen van een vakantiebestemming?",
+        "Hoe lang van tevoren boekt u meestal uw vakantie?",
+        "Wat is uw favoriete vervoermiddel tijdens een vakantie?",
+        "Wat is uw budget voor een gemiddelde vakantie?",
+        "Heeft u ooit een vakantie geboekt via een reisbureau?",
+        "Hoe belangrijk is het voor u om te weten wat anderen van een vakantiebestemming vinden voordat u boekt?",
+        "Wat voor soort activiteiten doet u het liefst tijdens uw vakantie?",
+        "Hoe belangrijk is het voor u dat de vakantiebestemming kindvriendelijk is?",
+        "Welk type weer prefereert u tijdens uw vakantie?",
+        "Welk continent zou u graag willen verkennen tijdens uw volgende vakantie?",
+        "Bent u bereid om lange afstanden te reizen voor uw vakantie?"
     );
 
-    // Loop door de vragen en toon ze
+    // Opties voor meerkeuzevragen
+    $opties = array(
+        "",
+        array("Minder dan eens per jaar", "Eens per jaar", "Meerdere keren per jaar"),
+        array("Europa", "Azië", "Amerika", "Afrika", "Oceanië"),
+        array("Hotel", "Appartement", "Villa", "Camping"),
+        array("Prijs", "Weer", "Cultuur", "Natuur"),
+        array("Minder dan een maand", "1-3 maanden", "3-6 maanden", "Meer dan 6 maanden"),
+        array("Auto", "Vliegtuig", "Trein", "Boot"),
+        array("Minder dan €500", "€500-€1000", "€1000-€2000", "Meer dan €2000"),
+        array("Ja", "Nee"),
+        array("Heel belangrijk", "Redelijk belangrijk", "Niet zo belangrijk"),
+        array("Wandelen", "Strandactiviteiten", "Stadsbezoek", "Avontuurlijke activiteiten"),
+        array("Heel belangrijk", "Redelijk belangrijk", "Niet zo belangrijk"),
+        array("Warm", "Koud"),
+        array("Europa", "Azië", "Amerika", "Afrika", "Oceanië"),
+        array("Ja", "Nee")
+    );
+
+    // Loop door de vragen en toon ze met de opties
     foreach ($vragen as $key => $vraag) {
         echo "<p>Vraag " . ($key + 1) . ": " . $vraag . "</p>";
-        echo "<input type='number' name='antwoord[]' min='0'><br>";
+        // Controleer of de vraag opties heeft en toon deze als een selectiemenu
+        if (isset($opties[$key]) && is_array($opties[$key])) {
+            echo "<select name='antwoord[]'>";
+            foreach ($opties[$key] as $optie) {
+                echo "<option value='" . $optie . "'>" . $optie . "</option>";
+            }
+            echo "</select><br>";
+        } else {
+            // Toon een invoerveld voor andere vragen
+            echo "<input type='number' name='antwoord[]' min='0'><br>";
+        }
     }
     ?>
 
     <input type="submit" name="submit" value="Verzend">
 </form>
-
-<?php
-// Functie om het advies te berekenen op basis van de antwoorden
-function berekenAdvies($antwoorden) {
-    // Hier kun je je adviesberekening implementeren op basis van de ingevulde antwoorden
-    // Dit is een eenvoudig voorbeeld
-    $totaal = array_sum($antwoorden);
-    $advies = "";
-
-    if ($totaal < 50) {
-        $advies = "Je levensstijl kan wat verbetering gebruiken. Probeer meer aandacht te besteden aan gezondheid en welzijn.";
-    } elseif ($totaal >= 50 && $totaal < 100) {
-        $advies = "Je levensstijl is redelijk, maar er zijn nog ruimtes voor verbetering. Probeer balans te vinden in je dagelijkse activiteiten.";
-    } else {
-        $advies = "Je hebt een goede balans in je levensstijl. Blijf zo doorgaan!";
-    }
-
-    return $advies;
-}
-
-// Controleer of het formulier is ingediend
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Controleer of de antwoorden zijn ingevuld
-    if (isset($_POST['antwoord'])) {
-        $antwoorden = $_POST['antwoord'];
-
-        // Controleer of er 15 antwoorden zijn ingevuld
-        if (count($antwoorden) == 15) {
-            // Bereken advies op basis van de ingevulde antwoorden
-            $advies = berekenAdvies($antwoorden);
-            echo "<h2>Advies:</h2>";
-            echo "<p>" . $advies . "</p>";
-        } else {
-            echo "<p>Vul alle vragen in!</p>";
-        }
-    }
-}
-
-// Toon het totale aantal vragen
-echo "<h3>Totaal aantal vragen: " . count($vragen) . "</h3>";
-?>
 
 </body>
 </html>

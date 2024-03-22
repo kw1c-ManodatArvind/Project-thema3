@@ -13,7 +13,7 @@
     <ul class="nav-links">
         <li><a href="../index.php">Home</a></li>
         <li><a href="../index.php">Vakanties</a></li>
-        <li><a href="../Pages/Cruises.php">Cruises</a></li>
+        <li><a href="resultaten.php">Cruises</a></li>
         <li><a href="../Pages/ServiceContact.php">Service & Contact</a></li>
         <li><a href="../Pages/Vliegtickets.php">Vliegtickets</a></li>
     </ul>
