@@ -1,71 +1,85 @@
-.navbar {
+.navbar
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
-.nav-links {
+.nav-links
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.nav-links li {
+.nav-links li
+{
     display: inline;
     margin-right: 20px;
 }
 
-.nav-links li:last-child {
+.nav-links li:last-child
+{
     margin-right: 0;
 }
 
-.nav-links li a {
+.nav-links li a
+{
     text-decoration: none;
     color: white;
 }
 
-.logo {
+.logo
+{
     height: 50px; /* aanpassen aan de gewenste hoogte */
 }
 
-.header-img {
+.header-img
+{
     width: 100%;
 }
-body {
+body
+{
     text-align: center; /* Centreren van de inhoud van de body */
 }
 
-.container {
+.container
+{
     display: flex; /* Gebruik flexbox voor layout */
     justify-content: center; /* Horizontaal centreren */
     margin-top: 50px; /* Ruimte bovenaan */
 }
 
-.decorative-links {
+.decorative-links
+{
     display: inline-block; /* Zet de rijen naast elkaar */
     vertical-align: top;
     margin: 0 10px; /* Ruimte tussen de rijen */
     text-align: left; /* Links uitlijnen van de links */
 }
 
-.decorative-links h2 {
+.decorative-links h2
+{
     color: navy;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.decorative-links ul {
+.decorative-links ul
+{
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.decorative-links li {
+.decorative-links li
+{
     margin-bottom: 15px;
 }
 
-.decorative-links a {
+.decorative-links a
+{
     display: block; /* Maak van de links blokelementen */
     padding: 20px; /* Ruimte binnen het vlakje */
     border: 2px solid navy; /* Rand rondom het vlakje */
@@ -74,35 +88,41 @@ body {
     text-decoration: none;
 }
 
-.decorative-links a:hover {
+.decorative-links a:hover
+{
     background-color: #71cbf4; /* Achtergrondkleur veranderen bij hover */
     color: white; /* Tekstkleur veranderen bij hover */
     text-decoration: none;
 }
-.more-help {
+.more-help
+{
     margin-top: 50px;
 }
 
-.more-help h2 {
+.more-help h2
+{
     color: navy;
     font-size: 36px;
     font-weight: bold;
 }
 
-.help-options {
+.help-options
+{
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.help-option {
+.help-option
+{
     width: calc(33.33% - 10px);
     margin-bottom: 20px;
     text-align: center;
 }
 
-.help-option h3 {
+.help-option h3
+{
     color: navy;
     font-size: 18px;
     font-weight: bold;
@@ -110,7 +130,8 @@ body {
     margin-bottom: 5px;
 }
 
-.help-option p {
+.help-option p
+{
     color: navy;
     font-size: 14px;
     font-weight: bold;
@@ -118,46 +139,55 @@ body {
     margin-bottom: 5px;
 }
 
-.help-option svg {
+.help-option svg
+{
     width: 50px;
     height: 50px;
     fill: navy;
 }
 
 /* Maak de vlakken onzichtbaar */
-.help-option {
+.help-option
+{
     background-color: transparent;
     border: none;
     padding: 0;
 }
 
-.help-option:hover {
+.help-option:hover
+{
     background-color: rgba(113, 203, 244, 0.5); /* Toon een lichte achtergrondkleur bij hover */
 }
-.about-tui h2 {
+.about-tui h2
+{
     color: navy;
     font-weight: bold;
 }
 
-.about-tui p {
+.about-tui p
+{
     color: navy;
 }
 
-.social-media-header {
+.social-media-header
+{
     margin-top: 20px;
     font-weight: bold;
     color: navy;
 }
 
-.social-media {
+.social-media
+{
     margin-top: 10px;
 }
 
-.social-media a {
+.social-media a
+{
     display: inline-block;
     margin-right: 10px;
 }
-.footer {
+.footer
+{
     background-color: #f2f2f2;
     padding: 40px 0;
     text-align: center;
@@ -165,7 +195,8 @@ body {
 
 .footer-left,
 .footer-center,
-.footer-right {
+.footer-right
+{
     display: inline-block;
     width: 30%;
     vertical-align: top;
@@ -180,14 +211,16 @@ body {
 
 .footer-left ul,
 .footer-center ul,
-.footer-right ul {
+.footer-right ul
+{
     list-style: none;
     padding: 0;
 }
 
 .footer-left ul li,
 .footer-center ul li,
-.footer-right ul li {
+.footer-right ul li
+{
     margin-bottom: 10px;
 }
 
@@ -195,7 +228,8 @@ body {
     margin-top: 20px;
 }
 
-.newsletter {
+.newsletter
+{
     background-color: #f2f2f2; /* Grijs vlak */
     padding: 20px 0;
 }
@@ -206,7 +240,8 @@ body {
 }
 
 .newsletter form input[type="email"],
-.newsletter form button {
+.newsletter form button
+{
     font-size: 14px;
     padding: 8px 15px;
     border: none;
@@ -214,27 +249,32 @@ body {
     color: #003366; /* Donkerblauwe tekstkleur */
 }
 
-.newsletter form input[type="email"] {
+.newsletter form input[type="email"]
+{
     width: 200px;
 }
 
-.newsletter form button {
+.newsletter form button
+{
     background-color: #71cbf4;
     cursor: pointer;
 }
 
-.footer-logo {
+.footer-logo
+{
     display: block;
     margin: 20px auto;
     max-width: 150px;
 }
 
-.work-at-tui {
+.work-at-tui
+{
     display: inline-block;
     margin-top: 20px;
 }
 
-.work-at-tui a {
+.work-at-tui a
+{
     color: #003366;
     display: inline-block;
     padding: 5px 10px;
@@ -243,10 +283,12 @@ body {
     text-decoration: none;
 }
 
-.work-at-tui a:hover {
+.work-at-tui a:hover
+{
     text-decoration: underline;
 }
-.navbarOnder {
+.navbarOnder
+{
     display: flex;
     justify-content: space-between;
     align-items: center;

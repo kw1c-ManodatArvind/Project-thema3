@@ -1,33 +1,118 @@
-.navbar {
+.navbar
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    background-color: #71cbf4;
 }
 
-.nav-links {
+.nav-links
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
-.nav-links li {
-    display: inline;
+.nav-links li
+{
     margin-right: 20px;
 }
 
-.nav-links li:last-child {
+.nav-links li:last-child
+{
     margin-right: 0;
 }
 
-.nav-links li a {
+.nav-links li a
+{
     text-decoration: none;
     color: white;
 }
 
-.logo {
+.logo
+{
     height: 50px; /* aanpassen aan de gewenste hoogte */
 }
-.header-img {
+
+.header-img
+{
     width: 100%;
+}
+
+.header-text
+{
+    color: #143178;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cruise-link
+{
+    color: #143178;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icons img
+{
+    margin-left: 10px;
+    width: 30px;
+    height: auto;
+}
+
+.content-section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.inner-content
+{
+    width: 45%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-content img
+{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.inner-content-text
+{
+    color: #143178;
+    font-size: 18px;
+    text-align: center;
+}
+
+.discount-text
+{
+    color: red;
+    font-weight: bold;
+}
+
+.red-button
+{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
 }
