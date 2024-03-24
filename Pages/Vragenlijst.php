@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vragenlijst</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tui website</title>
+    <link rel="stylesheet" href="../styles/Vragenlijst.css">
 </head>
 <body>
-
+<div class="navbar" style="background-color: #71cbf4;">
+    <a href="../index.php"><img src="../images/logo.png" alt="Logo" class="logo"></a>
+    <ul class="nav-links">
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="resultaten.php">Resultaten</a></li>
+        <li><a href="ServiceContact.php">Service & Contact</a></li>
+        <li><a href="Vliegtickets.php">Vliegtickets</a></li>
+        <li><a href="Vragenlijst.php">Vragenlijst</a></li>
+    </ul>
+</div>
 <h2>Vul de vragenlijst in:</h2>
 
 <form method="post" action="resultaten.php">
     <?php
     // Array met vragen en opties
     $vragen = array(
-        "",
+        "Hoeveel dagen gaat u op vakantie?",
         "Hoe vaak boekt u een vakantie?",
         "Wat is uw favoriete vakantiebestemming?",
         "Welk type accommodatie verkiest u tijdens uw vakantie?",

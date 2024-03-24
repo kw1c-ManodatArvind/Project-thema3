@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tui Website</title>
     <link rel="stylesheet" href="../styles/ServiceContact.css">
-    <script src="../scripts/script.js" defer> </script>
 </head>
 <body>
 <div class="navbar" style="background-color: #71cbf4;">
     <img src="../images/logo.png" alt="Logo" class="logo">
     <ul class="nav-links">
         <li><a href="../index.php">Home</a></li>
-        <li><a href="../index.php">Vakanties</a></li>
-        <li><a href="resultaten.php">Cruises</a></li>
-        <li><a href="../Pages/ServiceContact.php">Service & Contact</a></li>
-        <li><a href="../Pages/Vliegtickets.php">Vliegtickets</a></li>
+        <li><a href="resultaten.php">Resultaten</a></li>
+        <li><a href="ServiceContact.php">Service & Contact</a></li>
+        <li><a href="Vliegtickets.php">Vliegtickets</a></li>
+        <li><a href="Vragenlijst.php">Vragenlijst</a></li>
     </ul>
 </div>
 <img src="../images/HeaderPlaatje.jpg" alt="Header Image" class="header-img">
