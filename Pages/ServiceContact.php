@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoo Website</title>
+    <title>Tui Website</title>
     <link rel="stylesheet" href="../styles/ServiceContact.css">
     <script src="../scripts/script.js" defer> </script>
 </head>
 <body>
 <div class="navbar" style="background-color: #71cbf4;">
-    <img src="../images/Logo.jpg" alt="Logo" class="logo">
+    <img src="../images/logo.png" alt="Logo" class="logo">
     <ul class="nav-links">
         <li><a href="../index.php">Home</a></li>
         <li><a href="../index.php">Vakanties</a></li>
@@ -21,7 +21,8 @@
 <img src="../images/HeaderPlaatje.jpg" alt="Header Image" class="header-img">
 <div style="text-align: center; margin-top: 20px;">
     <h1 style="color: navy; font-size: 36px;">Service & contact</h1>
-    <h1 style="color: navy; font-size: 36px;">Vraag het onze virtuele assistent </h1>
+    <a href="https://www.tui.nl/contact/"><img src="../images/chatbot.png"></a>
+    <h1 style="color: navy; font-size: 36px;">Klik hierboven op de foto om het te vragen aan onze virtuele assistent</h1>
 </div>
 <div class="decorative-links-container">
     <div class="decorative-links">
@@ -94,7 +95,6 @@
 </div>
 <div class="about-tui">
     <h2>Over TUI Nederland</h2>
-    <p>Hier vind je informatie over TUI Nederland, onze merken, werken bij TUI Nederland en onze.</p>
     <p class="social-media-header">Volg TUI op social media</p>
     <div class="social-media">
         <a href="https://www.youtube.com/"><img src="youtube-logo.svg" alt="YouTube"></a>
@@ -102,6 +102,34 @@
         <a href="https://www.facebook.com/"><img src="facebook-logo.svg" alt="Facebook"></a>
         <a href="https://twitter.com/"><img src="twitter-logo.svg" alt="Twitter"></a>
     </div>
+    <div class="about-tui">
+        <p>Hier vind je informatie over TUI Nederland, onze merken, werken bij TUI Nederland en onze.</p>
+        <p class="address-info">
+            Vestigingsadres TUI Nederland N.V.<br>
+            Volmerlaan 3<br>
+            2288 GC Rijswijk<br><br>
+
+            Postadres:<br>
+            Postbus 157<br>
+            2280 AD Rijswijk<br><br>
+
+            KvK nr.: 27148888<br>
+            BTW nr.: NL804637295B01<br><br>
+
+            IBAN: NL04 INGB 0661847535<br>
+            BIC: INGBNL2A<br><br>
+
+            TUI is een handelsnaam van TUI Nederland N.V. en TUI Airlines Nederland B.V.<br><br>
+
+            TUI Airlines Nederland B.V<br>
+            KvK nr.: 27098512<br>
+            BTW nr.: NL 005200556B01<br><br>
+
+            IBAN: NL04 INGB 0661847535<br>
+            BIC: INGBNL2A
+        </p>
+    </div>
+
 </div>
 <div class="footer">
     <div class="footer-left">
@@ -158,5 +186,6 @@
     <div class="navbarOnder" style="background-color: #71cbf4;">
     </div>
 </div>
+
 </body>
 </html>
