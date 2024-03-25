@@ -96,10 +96,10 @@
     <h2>Over TUI Nederland</h2>
     <p class="social-media-header">Volg TUI op social media</p>
     <div class="social-media">
-        <a href="https://www.youtube.com/"><img src="youtube-logo.svg" alt="YouTube"></a>
-        <a href="https://www.instagram.com/"><img src="instagram-logo.svg" alt="Instagram"></a>
-        <a href="https://www.facebook.com/"><img src="facebook-logo.svg" alt="Facebook"></a>
-        <a href="https://twitter.com/"><img src="twitter-logo.svg" alt="Twitter"></a>
+        <a href="https://www.youtube.com/"><img src="../images/YoutubeLogo.jpg" alt="YouTube" width="100px"></a>
+        <a href="https://www.instagram.com/"><img src="../images/InstaLogo.jpg" alt="Instagram" width="50px"></a>
+        <a href="https://www.facebook.com/"><img src="../images/FacebookLogo.jpg" alt="Facebook"width="50px"></a>
+        <a href="https://twitter.com/"><img src="../images/TwitterLogo.png" alt="Twitter" width="50px"></a>
     </div>
     <div class="about-tui">
         <p>Hier vind je informatie over TUI Nederland, onze merken, werken bij TUI Nederland en onze.</p>
