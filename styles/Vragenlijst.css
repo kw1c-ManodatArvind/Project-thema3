@@ -1,14 +1,14 @@
+/* Verbeterde achtergrond */
+body {
+    background-color: #f0f0f0; /* Lichtgrijs */
+}
+
+/* TUI-stijl voor de navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-}
-
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 .nav-links li {
@@ -26,8 +26,60 @@
 }
 
 .logo {
-    height: 50px; /* aanpassen aan de gewenste hoogte */
+    height: 50px; /* Hoogte van het logo */
 }
+
 .header-img {
     width: 100%;
+}
+
+/* Stijl voor de vragenlijst */
+h2 {
+    color: #005898; /* TUI blauw */
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: normal; /* Verwijder letterdikte */
+}
+
+form {
+    max-width: 600px; /* Maximale breedte van het formulier */
+    margin: 0 auto;
+    background-color: white; /* Witte achtergrond voor het formulier */
+    padding: 20px; /* Ruimte binnenin het formulier */
+    border-radius: 10px; /* Afgeronde hoeken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Voeg een subtiele schaduw toe */
+}
+
+form p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333; /* Donkergrijs */
+}
+
+select,
+input[type="number"] {
+    width: calc(100% - 16px); /* Breedte van 100% minus de padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Lichtgrijze rand */
+    border-radius: 5px;
+    box-sizing: border-box; /* Voeg padding en randen toe aan de breedte */
+}
+
+/* Placeholder-stijl voor invoervelden */
+input[type="number"]::placeholder {
+    color: #aaa; /* Lichtgrijs */
+}
+
+input[type="submit"] {
+    background-color: #008CBA; /* Donkerder blauw */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #005073; /* Donkerder blauw bij hover */
 }
