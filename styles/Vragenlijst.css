@@ -83,3 +83,56 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #005073; /* Donkerder blauw bij hover */
 }
+
+.menu-toggle{
+    display: none;
+}
+
+@media screen and (max-width: 414px) {
+    .navbar {
+        padding: 10px 6px; /* Aangepaste padding voor kleinere schermen */
+    }
+
+    .nav-links li a {
+        font-size: 9px;
+    }
+
+    .logo {
+        height: 20px; /* Aangepaste hoogte voor kleinere schermen */
+    }
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        background-color: #71cbf4;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        transform: translateX(100%); /* Startpositie buiten het scherm aan de rechterkant */
+        transition: transform 0.3s ease-in-out; /* Voeg een overgang toe aan de transform-eigenschap */
+    }
+
+    .nav-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .menu-open .nav-links {
+        transform: translateX(0); /* Schuif het menu van rechts naar links wanneer het menu wordt geopend */
+    }
+
+    .menu-toggle {
+        display: block; /* Toon de hamburgerknop bij kleinere schermen */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .menu-open .nav-links {
+        display: flex; /* Toon het menu wanneer de hamburgerknop wordt geactiveerd */
+    }
+}

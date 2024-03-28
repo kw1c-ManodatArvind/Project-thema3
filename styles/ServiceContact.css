@@ -233,33 +233,23 @@ body {
     align-items: center;
     padding: 30px 20px;
 }
-/* Algemene stijlen blijven hetzelfde */
 
-/* Mediaquery voor schermen kleiner dan 768px (bijv. smartphones) */
-@media only screen and (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stapel de elementen op in plaats van naast elkaar */
+@media screen and (max-width: 414px) {
+    .navbar {
+        padding: 10px 6px; /* Aangepaste padding voor kleinere schermen */
     }
 
-    .decorative-links {
-        margin-bottom: 20px; /* Extra ruimte tussen de decoratieve links */
+    .nav-links li a {
+        font-size: 9px;
     }
 
-    .help-option {
-        width: calc(100% - 20px); /* Neem de volledige breedte in op kleinere schermen */
+    .logo {
+        height: 20px; /* Aangepaste hoogte voor kleinere schermen */
     }
-}
 
-/* Mediaquery voor schermen kleiner dan 1024px (bijv. tablets) */
-@media only screen and (max-width: 1024px) {
-    .footer-left,
-    .footer-center,
-    .footer-right {
-        width: 100%; /* Neem de volledige breedte in op kleinere schermen */
+    #chatbot
+    {
+        width: 300px;
     }
-}
 
-/* Mediaquery voor schermen groter dan 1280px (bijv. grote desktops) */
-@media only screen and (min-width: 1280px) {
-    /* Voeg hier eventuele extra aanpassingen toe voor grote schermen */
 }

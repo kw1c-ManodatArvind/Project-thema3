@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tui website</title>
     <link rel="stylesheet" href="../styles/Vragenlijst.css">
+    <script src="../scripts/script.js" defer></script>
+
 </head>
 <body>
 <div class="navbar" style="background-color: #71cbf4;">
     <a href="../index.php"><img src="../images/logo.png" alt="Logo" class="logo"></a>
+    <button class="menu-toggle" aria-label="Menu openen/sluiten">&#9776;</button>
     <ul class="nav-links">
         <li><a href="../index.php">Home</a></li>
         <li><a href="resultaten.php">Resultaten</a></li>
@@ -17,6 +20,7 @@
         <li><a href="Vragenlijst.php">Vragenlijst</a></li>
     </ul>
 </div>
+
 <h2>Vul de vragenlijst in:</h2>
 
 <form method="post" action="resultaten.php">
@@ -37,26 +41,26 @@
         "Hoe belangrijk is het voor u dat de vakantiebestemming kindvriendelijk is?",
         "Welk type weer prefereert u tijdens uw vakantie?",
         "Welk continent zou u graag willen verkennen tijdens uw volgende vakantie?",
-        "Bent u bereid om lange afstanden te reizen voor uw vakantie?"
+        "Hoe ver wilt u reizen voor uw vakantie?"
     );
 
     // Opties voor meerkeuzevragen
     $opties = array(
         "",
-        array("Minder dan eens per jaar", "Eens per jaar", "Meerdere keren per jaar"),
+        array("Minder dan eens per jaar", "Eens per jaar", "Meerdere keren per jaar", "Eens per maand"),
         array("Europa", "Azië", "Amerika", "Afrika", "Oceanië"),
         array("Hotel", "Appartement", "Villa", "Camping"),
         array("Prijs", "Weer", "Cultuur", "Natuur"),
         array("Minder dan een maand", "1-3 maanden", "3-6 maanden", "Meer dan 6 maanden"),
         array("Auto", "Vliegtuig", "Trein", "Boot"),
         array("Minder dan €500", "€500-€1000", "€1000-€2000", "Meer dan €2000"),
-        array("Ja", "Nee"),
-        array("Heel belangrijk", "Redelijk belangrijk", "Niet zo belangrijk"),
+        array("Een keertje", "Paar keer", "Meerdere keren per jaar", "Nooit"),
+        array("Heel belangrijk", "Redelijk belangrijk", "Niet zo belangrijk", "Niet belangrijk"),
         array("Wandelen", "Strandactiviteiten", "Stadsbezoek", "Avontuurlijke activiteiten"),
-        array("Heel belangrijk", "Redelijk belangrijk", "Niet zo belangrijk"),
-        array("Warm", "Koud"),
+        array("Heel belangrijk", "Redelijk belangrijk", "Niet zo belangrijk", "Niet belangrijk"),
+        array("Zonnig", "Regen" ,"Bewolkt" ,"Sneeuw"),
         array("Europa", "Azië", "Amerika", "Afrika", "Oceanië"),
-        array("Ja", "Nee")
+        array("0-500 km", "500-1000 km","1000-1500 km"," Verder dan 1500 km")
     );
 
     // Loop door de vragen en toon ze met de opties
