@@ -100,6 +100,7 @@ input[type="submit"]:hover {
     .logo {
         height: 20px; /* Aangepaste hoogte voor kleinere schermen */
     }
+
     .nav-links {
         list-style-type: none;
         margin: 0;
@@ -107,9 +108,10 @@ input[type="submit"]:hover {
         background-color: #71cbf4;
         position: absolute;
         top: 60px;
-        right: 0;
+        right: 8px;
         transform: translateX(100%); /* Startpositie buiten het scherm aan de rechterkant */
         transition: transform 0.3s ease-in-out; /* Voeg een overgang toe aan de transform-eigenschap */
+        display: none; /* Verberg de navigatiebalk standaard */
     }
 
     .nav-links li {

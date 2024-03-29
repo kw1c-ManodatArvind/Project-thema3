@@ -6,7 +6,6 @@
     <title>Tui website</title>
     <link rel="stylesheet" href="../styles/Vragenlijst.css">
     <script src="../scripts/script.js" defer></script>
-
 </head>
 <body>
 <div class="navbar" style="background-color: #71cbf4;">

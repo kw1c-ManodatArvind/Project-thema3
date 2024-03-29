@@ -169,4 +169,48 @@ hr
         height: 20px; /* Aangepaste hoogte voor kleinere schermen */
     }
 
+    .header-img {
+        display: none; /* Verberg de header afbeelding op kleinere schermen */
+    }
+
+    .container {
+        padding: 10px; /* Verklein de padding van de container op kleinere schermen */
+    }
+
+    .square-images img {
+        width: 100%;
+        height: auto;
+        max-width: 200px; /* Maximale breedte van de afbeelding */
+        aspect-ratio: 1; /* Behoudt de aspect ratio van de afbeelding (vierkant) */
+    }
+
+    .image-wrapper img {
+        width: 50%;
+        height: auto;
+        max-width: 100%; /* Maximale breedte van de afbeelding */
+        aspect-ratio: 1; /* Behoudt de aspect ratio van de afbeelding (vierkant) */
+    }
+
+    .blue-boxes {
+        grid-template-columns: repeat(1, 1fr); /* Verander het aantal kolommen naar 1 voor kleinere schermen */
+    }
+
+    .image-columns {
+        flex-direction: column; /* Verander de richting van de flexbox naar kolommen voor kleinere schermen */
+    }
+
+    .column {
+        margin-right: 0; /* Verwijder de rechtermarge van de kolommen voor kleinere schermen */
+        margin-bottom: 20px; /* Voeg een bodemmarge toe aan de kolommen voor kleinere schermen */
+    }
+
+    .image-wrapper {
+        flex-direction: column; /* Verander de richting van de flexbox naar kolommen voor kleinere schermen */
+    }
+
+    .image-wrapper p {
+        margin-left: 0; /* Verwijder de linker marge van de tekst naast de afbeeldingen voor kleinere schermen */
+        margin-top: 10px; /* Voeg een bovenmarge toe aan de tekst naast de afbeeldingen voor kleinere schermen */
+    }
+
 }
