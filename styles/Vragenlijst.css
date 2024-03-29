@@ -109,8 +109,6 @@ input[type="submit"]:hover {
         position: absolute;
         top: 60px;
         right: 8px;
-        transform: translateX(100%); /* Startpositie buiten het scherm aan de rechterkant */
-        transition: transform 0.3s ease-in-out; /* Voeg een overgang toe aan de transform-eigenschap */
         display: none; /* Verberg de navigatiebalk standaard */
     }
 
@@ -119,9 +117,6 @@ input[type="submit"]:hover {
         margin-bottom: 10px;
     }
 
-    .menu-open .nav-links {
-        transform: translateX(0); /* Schuif het menu van rechts naar links wanneer het menu wordt geopend */
-    }
 
     .menu-toggle {
         display: block; /* Toon de hamburgerknop bij kleinere schermen */
