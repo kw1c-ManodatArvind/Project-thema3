@@ -1,159 +1,140 @@
-.navbar
-{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
-.nav-links
-{
+.nav-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.nav-links li
-{
+.nav-links li {
     display: inline;
     margin-right: 20px;
 }
 
-.nav-links li:last-child
-{
+.nav-links li:last-child {
     margin-right: 0;
 }
 
-.nav-links li a
-{
+.nav-links li a {
     text-decoration: none;
     color: white;
 }
 
-.logo
-{
-    height: 50px; /* aanpassen aan de gewenste hoogte */
+.logo {
+    height: 50px;
 }
 
-.header-img
-{
+.header-img {
     width: 100%;
 }
 
-.container
-{
+.container {
     text-align: center;
     padding: 20px;
 }
 
-.square-images
-{
+.square-images {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 5px; /* Je kunt deze waarde aanpassen om de ruimte tussen de plaatjes te verkleinen */
+    grid-gap: 5px;
 }
 
-
-
-.square-images img
-{
+.square-images img {
     width: 100%;
-    max-width: 200px; /* aanpassen aan de gewenste breedte */
+    max-width: 200px;
 }
 
-
-.description
-{
+.description {
     margin-top: 20px;
 }
 
-.blue-boxes
-{
+.blue-boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
-.blue-box
-{
+.blue-box {
     background-color: #71cbf4;
     color: white;
     padding: 20px;
 }
 
-.image-columns
-{
+.image-columns {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.column
-{
+.column {
     flex: 1;
     margin-right: 20px;
 }
 
-.column:last-child
-{
+.column:last-child {
     margin-right: 0;
 }
 
-.image-wrapper
-{
+.image-wrapper {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    position: relative; /* Hiermee kunnen we de absolute positie van de lijn instellen */
+    position: relative;
 }
 
 .image-wrapper p {
     margin-left: 20px;
 }
 
-.image-wrapper:after
-{
-    content: ''; /* Dit creëert een pseudo-element */
-    position: absolute; /* Absoluut positioneren ten opzichte van de parent */
-    bottom: 0; /* Plaats het onderaan het ouder-element */
-    left: 0; /* Beginnend vanaf de linkerzijde van het ouder-element */
-    width: 100%; /* Neem de volledige breedte in */
-    height: 1px; /* Hoogte van de lijn */
-    background-color: #ccc; /* Kleur van de lijn */
+.image-wrapper:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
 }
 
-
-hr
-{
+hr {
     flex: 1;
     border: none;
     border-top: 1px solid #ccc;
     margin: 0 20px;
 }
 
-.image-wrapper img
-{
+.image-wrapper img {
     max-width: 100%;
     height: auto;
 }
 
-.image-wrapper p
-{
+.image-wrapper p {
     margin-left: 20px;
 }
 
-.footer
-{
+.footer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 10px 20px;
+    background-color: #71cbf4;
 }
 
-.footer-logo
-{
-    height: 30px; /* Pas dit aan aan de gewenste hoogte */
+.footer-logo {
+    height: 30px;
     margin-right: 20px;
 }
 
+/* Stijlen voor de blauwe en rode tekst */
+.blue-text {
+    color: blue;
+}
 
+.red-text {
+    color: red;
+}
