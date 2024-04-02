@@ -20,7 +20,7 @@
 <img src="../images/HeaderPlaatje.jpg" alt="Header Image" class="header-img">
 <div style="text-align: center; margin-top: 20px;">
     <h1 style="color: navy; font-size: 36px;">Service & contact</h1>
-    <a href="https://www.tui.nl/contact/"><img src="../images/chatbot.png"></a>
+    <a href="https://www.tui.nl/contact/"><img id="chatbot" src="../images/chatbot.png"></a>
     <h1 style="color: navy; font-size: 36px;">Klik hierboven op de foto om het te vragen aan onze virtuele assistent</h1>
 </div>
 <div class="decorative-links-container">

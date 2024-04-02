@@ -1,6 +1,7 @@
 
-.navbar
-{
+/* Basisstijlen blijven hetzelfde */
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +31,7 @@
 .logo {
     height: 50px; /* aanpassen aan de gewenste hoogte */
 }
+
 .header-img {
     width: 100%;
 }
@@ -43,6 +45,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.container img
+{
+    width: 500px;
+}
+
 h2 {
     text-align: center;
     color: #333;
@@ -52,7 +59,38 @@ h2 {
     text-align: center;
 }
 
-.resultaten img {
-    max-width: 100%;
-    margin-top: 20px;
+.footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
 }
+
+.footer-logo
+{
+    height: 30px; /* Pas dit aan aan de gewenste hoogte */
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 414px) {
+    .navbar {
+        padding: 10px 6px; /* Aangepaste padding voor kleinere schermen */
+    }
+
+    .nav-links li a {
+        font-size: 9px;
+    }
+
+    .logo {
+        height: 20px; /* Aangepaste hoogte voor kleinere schermen */
+    }
+
+    .container img
+    {
+        width: 300px;
+    }
+}
+
+
+

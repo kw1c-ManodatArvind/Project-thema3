@@ -37,19 +37,19 @@
             // Toon afbeelding voor de beste vakantiebestemming
             switch ($beste_land) {
                 case 'Frankrijk':
-                    echo "<img src='../images/Frankrijk.jpg' alt='Frankrijk' width='500px'>";
+                    echo "<img src='../images/Frankrijk.jpg' alt='Frankrijk'>";
                     break;
                 case 'Thailand':
-                    echo "<img src='../images/Thailand.jpg' alt='Thailand' width='500px'>";
+                    echo "<img src='../images/Thailand.jpg' alt='Thailand'>";
                     break;
                 case 'Verenigde Staten':
-                    echo "<img src='../images/Usa.jpg' alt='Verenigde Staten' width='500px'>";
+                    echo "<img src='../images/Usa.jpg' alt='Verenigde Staten'>";
                     break;
                 case 'Kenia':
-                    echo "<img src='../images/Kenia.jpg' alt='Kenia' width='500px'>";
+                    echo "<img src='../images/Kenia.jpg' alt='Kenia'>";
                     break;
                 case 'Australië':
-                    echo "<img src='../images/Australie.jpg' alt='Australië' width='500px'>";
+                    echo "<img src='../images/Australie.jpg' alt='Australië'>";
                     break;
                 default:
                     break;
@@ -88,6 +88,7 @@
     }
     ?>
 </div>
+
 
 </body>
 </html>

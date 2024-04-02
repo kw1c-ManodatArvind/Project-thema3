@@ -346,3 +346,18 @@
     align-items: center;
     padding: 30px 20px;
 }
+
+@media screen and (max-width: 414px) {
+    .navbar {
+        padding: 10px 6px; /* Aangepaste padding voor kleinere schermen */
+    }
+
+    .nav-links li a {
+        font-size: 9px;
+    }
+
+    .logo {
+        height: 20px; /* Aangepaste hoogte voor kleinere schermen */
+    }
+
+}
