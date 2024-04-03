@@ -1,106 +1,90 @@
-.navbar
-{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    background-color: #71cbf4;
 }
 
-.nav-links
-{
+.nav-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.nav-links li
-{
+.nav-links li {
     display: inline;
     margin-right: 20px;
 }
 
-.nav-links li:last-child
-{
+.nav-links li:last-child {
     margin-right: 0;
 }
 
-.nav-links li a
-{
+.nav-links li a {
     text-decoration: none;
     color: white;
 }
 
-.logo
-{
+.logo {
     height: 50px; /* aanpassen aan de gewenste hoogte */
 }
 
-.header-img
-{
+.header-img {
     width: 100%;
 }
 
-.container
-{
+.container {
     text-align: center;
     padding: 20px;
 }
 
-.square-images
-{
+.square-images {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 5px; /* Je kunt deze waarde aanpassen om de ruimte tussen de plaatjes te verkleinen */
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto; /* Laat de rijhoogte automatisch aanpassen aan de inhoud */
+    grid-gap: 10px; /* Je kunt deze waarde aanpassen om de ruimte tussen de afbeeldingen te verkleinen */
 }
 
-
-
-.square-images img
-{
+.square-images img {
     width: 100%;
+    height: auto;
     max-width: 200px; /* aanpassen aan de gewenste breedte */
 }
 
 
-.description
-{
+.description {
     margin-top: 20px;
 }
 
-.blue-boxes
-{
+.blue-boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
-.blue-box
-{
+.blue-box {
     background-color: #71cbf4;
     color: white;
     padding: 20px;
 }
 
-.image-columns
-{
+.image-columns {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.column
-{
+.column {
     flex: 1;
     margin-right: 20px;
 }
 
-.column:last-child
-{
+.column:last-child {
     margin-right: 0;
 }
 
-.image-wrapper
-{
+.image-wrapper {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -111,8 +95,7 @@
     margin-left: 20px;
 }
 
-.image-wrapper:after
-{
+.image-wrapper:after {
     content: ''; /* Dit creëert een pseudo-element */
     position: absolute; /* Absoluut positioneren ten opzichte van de parent */
     bottom: 0; /* Plaats het onderaan het ouder-element */
@@ -122,36 +105,30 @@
     background-color: #ccc; /* Kleur van de lijn */
 }
 
-
-hr
-{
+hr {
     flex: 1;
     border: none;
     border-top: 1px solid #ccc;
     margin: 0 20px;
 }
 
-.image-wrapper img
-{
+.image-wrapper img {
     max-width: 100%;
     height: auto;
 }
 
-.image-wrapper p
-{
+.image-wrapper p {
     margin-left: 20px;
 }
 
-.footer
-{
+.footer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 10px 20px;
 }
 
-.footer-logo
-{
+.footer-logo {
     height: 30px; /* Pas dit aan aan de gewenste hoogte */
     margin-right: 20px;
 }
@@ -212,5 +189,44 @@ hr
         margin-left: 0; /* Verwijder de linker marge van de tekst naast de afbeeldingen voor kleinere schermen */
         margin-top: 10px; /* Voeg een bovenmarge toe aan de tekst naast de afbeeldingen voor kleinere schermen */
     }
-
 }
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Als er niet genoeg ruimte is, wrap de items naar een nieuwe rij */
+    justify-content: flex-start; /* Begin vanaf de linkerzijde */
+    align-items: flex-start; /* Aligneer items bovenaan */
+}
+
+.text-boxes {
+    order: 2; /* Plaats de vakjes aan de rechterkant */
+    flex-basis: 20%; /* Elk vakje neemt 20% van de beschikbare ruimte in */
+    margin-left: 20px; /* Voeg wat ruimte toe tussen de afbeeldingen en de vakjes */
+}
+
+.images-section {
+    order: 1; /* Plaats de afbeeldingen aan de linkerkant */
+    flex: 1; /* De afbeeldingen nemen alle beschikbare ruimte in */
+    margin-right: 20px; /* Voeg wat ruimte toe tussen de afbeeldingen en de vakjes */
+}
+
+.text-box {
+    background-color: #ccc;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.text-box p {
+    margin: 0;
+    color: blue;
+}
+
+.text-box:hover {
+    background-color: #eee;
+}
+
+.text-box:last-child {
+    background-color: #ccc;
+    color: red;
+}
+
