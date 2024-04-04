@@ -34,6 +34,28 @@
     width: 100%;
 }
 
+.small-boxes {
+    float: right; /* Plaats de small-boxes rechts */
+    margin-top: 20px; /* Pas deze marge aan zoals gewenst */
+    text-align: right; /* Uitlijnen van de tekst rechts */
+}
+
+.small-box {
+    width: calc(10% - 10px); /* Bereken de breedte van elk vak */
+    height: 50px; /* Pas de hoogte aan zoals gewenst */
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    padding-left: 400px;
+    padding-right: 400px;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Voeg ondermarge toe tussen de vakken */
+}
+
+
+.small-box p {
+    margin: 0;
+}
+
 .container {
     text-align: center;
     padding: 20px;
@@ -160,6 +182,23 @@ hr {
         height: auto;
         max-width: 100%; /* Maximale breedte van de afbeelding */
         aspect-ratio: 1; /* Behoudt de aspect ratio van de afbeelding (vierkant) */
+    }
+
+    .small-boxes {
+        float: right; /* Plaats de small-boxes rechts */
+        margin-top: 20px; /* Pas deze marge aan zoals gewenst */
+        text-align: right; /* Uitlijnen van de tekst rechts */
+    }
+
+    .small-box {
+        width: calc(10% - 10px); /* Bereken de breedte van elk vak */
+        height: 10px; /* Pas de hoogte aan zoals gewenst */
+        background-color: aliceblue;
+        border: 1px solid #ccc;
+        padding-left: 100px;
+        padding-right: 100px;
+        box-sizing: border-box;
+        margin-bottom: 10px; /* Voeg ondermarge toe tussen de vakken */
     }
 
     .blue-boxes {

@@ -18,6 +18,33 @@
     </ul>
 </div>
 <img src="images/HeaderPlaatje.jpg" alt="Header Image" class="header-img">
+<!-- Voeg deze code toe onder de header afbeelding -->
+<div class="small-boxes">
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+</div>
 <div class="container">
     <div class="square-images">
         <img src="images/VrouwMetKind.jpg" alt="Image 1">
