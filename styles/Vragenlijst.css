@@ -100,7 +100,6 @@ input[type="submit"]:hover {
     .logo {
         height: 20px; /* Aangepaste hoogte voor kleinere schermen */
     }
-
     .nav-links {
         list-style-type: none;
         margin: 0;
@@ -108,8 +107,9 @@ input[type="submit"]:hover {
         background-color: #71cbf4;
         position: absolute;
         top: 60px;
-        right: 8px;
-        display: none; /* Verberg de navigatiebalk standaard */
+        right: 0;
+        transform: translateX(100%); /* Startpositie buiten het scherm aan de rechterkant */
+        transition: transform 0.3s ease-in-out; /* Voeg een overgang toe aan de transform-eigenschap */
     }
 
     .nav-links li {
@@ -117,6 +117,9 @@ input[type="submit"]:hover {
         margin-bottom: 10px;
     }
 
+    .menu-open .nav-links {
+        transform: translateX(0); /* Schuif het menu van rechts naar links wanneer het menu wordt geopend */
+    }
 
     .menu-toggle {
         display: block; /* Toon de hamburgerknop bij kleinere schermen */
@@ -133,3 +136,5 @@ input[type="submit"]:hover {
         display: flex; /* Toon het menu wanneer de hamburgerknop wordt geactiveerd */
     }
 }
+
+
