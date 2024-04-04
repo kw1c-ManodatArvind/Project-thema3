@@ -170,11 +170,9 @@ hr {
         padding: 10px; /* Verklein de padding van de container op kleinere schermen */
     }
 
+
     .square-images img {
-        width: 100%;
-        height: auto;
-        max-width: 200px; /* Maximale breedte van de afbeelding */
-        aspect-ratio: 1; /* Behoudt de aspect ratio van de afbeelding (vierkant) */
+        height: 115px;
     }
 
     .image-wrapper img {
@@ -190,15 +188,29 @@ hr {
         text-align: right; /* Uitlijnen van de tekst rechts */
     }
 
+    .small-boxes {
+        float: right; /* Plaats de small-boxes rechts */
+        margin-top: 20px; /* Pas deze marge aan zoals gewenst */
+        text-align: right; /* Uitlijnen van de tekst rechts */
+        display: none;
+    }
+
     .small-box {
         width: calc(10% - 10px); /* Bereken de breedte van elk vak */
-        height: 10px; /* Pas de hoogte aan zoals gewenst */
+        height: 50px; /* Pas de hoogte aan zoals gewenst */
         background-color: aliceblue;
         border: 1px solid #ccc;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 400px;
+        padding-right: 400px;
         box-sizing: border-box;
         margin-bottom: 10px; /* Voeg ondermarge toe tussen de vakken */
+        display: none;
+    }
+
+
+    .small-box p {
+        margin: 0;
+        display: none;
     }
 
     .blue-boxes {
