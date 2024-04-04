@@ -116,7 +116,7 @@ echo "</form>";
 
 
 
-// Verdere verwerking van de resultaten komt hier...
+// Verdere verwerking van de resultaten komt hier....
 ?>
 
 </body>
