@@ -85,6 +85,47 @@
     } else {
         echo "<p>Geen formulier verzonden.</p>";
     }
+
+
+    session_start(); // Start de sessie
+
+    // Naam van de potentiele student
+    $student_name = "John Doe";
+
+    // Huidige datum en tijd
+    $current_datetime = date("Y-m-d H:i:s");
+
+    // Controleer of het formulier is ingediend en verwerk de resultaten
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Controleer of de antwoorden zijn ingevuld
+        if (isset($_POST['antwoord'])) {
+            // Ontvang de antwoorden van het formulier
+            $antwoorden = $_POST['antwoord'];
+
+            // Sla de resultaten op in de sessie
+            $_SESSION['resultaten'] = $antwoorden;
+        }
+    }
+
+    // Controleer of er resultaten beschikbaar zijn in de sessie
+    if (isset($_SESSION['resultaten'])) {
+        $antwoorden = $_SESSION['resultaten'];
+
+        // Vervolg van PHP-code om resultaten weer te geven en advies te tonen...
+
+        // Voorbeeld van het tonen van de vragen en ingevulde antwoorden
+        echo "<h3>Overzicht van vragen en ingevulde antwoorden:</h3>";
+        foreach ($vragen as $key => $vraag) {
+            echo "<p>Vraag " . ($key + 1) . ": " . $vraag . "</p>";
+            echo "<p>Antwoord: " . $antwoorden[$key] . "</p>";
+        }
+    } else {
+        // Als er geen resultaten zijn, doorverwijzen naar de formulierpagina
+        header("Location: Vragenlijst.php");
+        exit(); // Zorg ervoor dat er geen code meer wordt uitgevoerd na de doorverwijzing
+    }
+
+
     ?>
 </div>
 

@@ -18,49 +18,39 @@
     </ul>
 </div>
 <img src="images/HeaderPlaatje.jpg" alt="Header Image" class="header-img">
+<!-- Voeg deze code toe onder de header afbeelding -->
+<div class="small-boxes">
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+    <div class="small-box">
+        <p>Text 1</p>
+    </div>
+</div>
 <div class="container">
     <div class="square-images">
         <img src="images/VrouwMetKind.jpg" alt="Image 1">
         <img src="images/Vrouw.jpg" alt="Image 2">
         <img src="images/Familie.jpg" alt="Image 3">
         <img src="images/Logo1.jpg" alt="Image 4">
-    </div>
-    <div class="container">
-        <div class="square-images">
-            <!-- Afbeeldingen -->
-        </div>
-        <div class="text-boxes">
-            <div class="text-box">
-                <p>Text 1</p>
-            </div>
-            <div class="text-box">
-                <p>Text 2</p>
-            </div>
-            <div class="text-box">
-                <p>Text 3</p>
-            </div>
-            <div class="text-box">
-                <p>Text 4</p>
-            </div>
-            <div class="text-box">
-                <p>Text 5</p>
-            </div>
-            <div class="text-box">
-                <p>Text 6</p>
-            </div>
-            <div class="text-box">
-                <p>Text 7</p>
-            </div>
-            <div class="text-box">
-                <p>Text 8</p>
-            </div>
-            <div class="text-box">
-                <p>Text 9</p>
-            </div>
-            <div class="text-box">
-                <p>Text 10</p>
-            </div>
-        </div>
     </div>
     <p class="description">Relaxed boeken met TUI Garanties en Verzekeringen.</p>
     <div class="blue-boxes">

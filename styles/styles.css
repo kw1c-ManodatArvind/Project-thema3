@@ -34,6 +34,28 @@
     width: 100%;
 }
 
+.small-boxes {
+    float: right; /* Plaats de small-boxes rechts */
+    margin-top: 20px; /* Pas deze marge aan zoals gewenst */
+    text-align: right; /* Uitlijnen van de tekst rechts */
+}
+
+.small-box {
+    width: calc(10% - 10px); /* Bereken de breedte van elk vak */
+    height: 50px; /* Pas de hoogte aan zoals gewenst */
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    padding-left: 400px;
+    padding-right: 400px;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Voeg ondermarge toe tussen de vakken */
+}
+
+
+.small-box p {
+    margin: 0;
+}
+
 .container {
     text-align: center;
     padding: 20px;
@@ -44,14 +66,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto; /* Laat de rijhoogte automatisch aanpassen aan de inhoud */
     grid-gap: 10px; /* Je kunt deze waarde aanpassen om de ruimte tussen de afbeeldingen te verkleinen */
+    width: 100px;
 }
-
-.square-images img {
-    width: 100%;
-    height: auto;
-    max-width: 200px; /* aanpassen aan de gewenste breedte */
-}
-
 
 .description {
     margin-top: 20px;
@@ -168,6 +184,23 @@ hr {
         aspect-ratio: 1; /* Behoudt de aspect ratio van de afbeelding (vierkant) */
     }
 
+    .small-boxes {
+        float: right; /* Plaats de small-boxes rechts */
+        margin-top: 20px; /* Pas deze marge aan zoals gewenst */
+        text-align: right; /* Uitlijnen van de tekst rechts */
+    }
+
+    .small-box {
+        width: calc(10% - 10px); /* Bereken de breedte van elk vak */
+        height: 10px; /* Pas de hoogte aan zoals gewenst */
+        background-color: aliceblue;
+        border: 1px solid #ccc;
+        padding-left: 100px;
+        padding-right: 100px;
+        box-sizing: border-box;
+        margin-bottom: 10px; /* Voeg ondermarge toe tussen de vakken */
+    }
+
     .blue-boxes {
         grid-template-columns: repeat(1, 1fr); /* Verander het aantal kolommen naar 1 voor kleinere schermen */
     }
@@ -190,43 +223,3 @@ hr {
         margin-top: 10px; /* Voeg een bovenmarge toe aan de tekst naast de afbeeldingen voor kleinere schermen */
     }
 }
-.content {
-    display: flex;
-    flex-wrap: wrap; /* Als er niet genoeg ruimte is, wrap de items naar een nieuwe rij */
-    justify-content: flex-start; /* Begin vanaf de linkerzijde */
-    align-items: flex-start; /* Aligneer items bovenaan */
-}
-
-.text-boxes {
-    order: 2; /* Plaats de vakjes aan de rechterkant */
-    flex-basis: 20%; /* Elk vakje neemt 20% van de beschikbare ruimte in */
-    margin-left: 20px; /* Voeg wat ruimte toe tussen de afbeeldingen en de vakjes */
-}
-
-.images-section {
-    order: 1; /* Plaats de afbeeldingen aan de linkerkant */
-    flex: 1; /* De afbeeldingen nemen alle beschikbare ruimte in */
-    margin-right: 20px; /* Voeg wat ruimte toe tussen de afbeeldingen en de vakjes */
-}
-
-.text-box {
-    background-color: #ccc;
-    padding: 10px;
-    margin: 5px;
-    text-align: center;
-}
-
-.text-box p {
-    margin: 0;
-    color: blue;
-}
-
-.text-box:hover {
-    background-color: #eee;
-}
-
-.text-box:last-child {
-    background-color: #ccc;
-    color: red;
-}
-

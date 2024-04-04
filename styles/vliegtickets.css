@@ -356,8 +356,18 @@
         font-size: 9px;
     }
 
+    .nav
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        font-size: 8px;
+    }
+
     .logo {
         height: 20px; /* Aangepaste hoogte voor kleinere schermen */
     }
+
+
 
 }
