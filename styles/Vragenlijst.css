@@ -102,7 +102,6 @@ input[type="submit"]:hover {
     }
 
     .nav-links {
-
         list-style-type: none;
         margin: 0;
         padding: 10px;
@@ -110,8 +109,13 @@ input[type="submit"]:hover {
         position: absolute;
         top: 60px;
         right: 8px;
-        transform: translateX(100%); /* Startpositie buiten het scherm aan de rechterkant */
         transition: transform 0.3s ease-in-out; /* Voeg een overgang toe aan de transform-eigenschap */
+    }
+
+    .nav-links
+    {
+        display: none;
+        transform: translateX(100%); /* Startpositie buiten het scherm aan de rechterkant */
     }
 
     .nav-links li {

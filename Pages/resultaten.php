@@ -1,75 +1,3 @@
-
-<?php
-// Start de PHP-sessie om resultaten op te slaan
-session_start();
-
-// Definieer de vragen
-$vragen = array(
-    "Geef uw naam:",
-    "Hoeveel dagen gaat u op vakantie?",
-    "Hoe vaak boekt u een vakantie?",
-    "Wat is uw favoriete vakantiebestemming?",
-    "Welk type accommodatie verkiest u tijdens uw vakantie?",
-    "Wat is uw belangrijkste factor bij het kiezen van een vakantiebestemming?",
-    "Hoe lang van tevoren boekt u meestal uw vakantie?",
-    "Wat is uw favoriete vervoermiddel tijdens een vakantie?",
-    "Wat is uw budget voor een gemiddelde vakantie?",
-    "Heeft u ooit een vakantie geboekt via een reisbureau?",
-    "Hoe belangrijk is het voor u om te weten wat anderen van een vakantiebestemming vinden voordat u boekt?",
-    "Wat voor soort activiteiten doet u het liefst tijdens uw vakantie?",
-    "Hoe belangrijk is het voor u dat de vakantiebestemming kindvriendelijk is?",
-    "Welk type weer prefereert u tijdens uw vakantie?",
-    "Welk continent zou u graag willen verkennen tijdens uw volgende vakantie?",
-    "Hoe ver wilt u reizen voor uw vakantie?",
-    "Bent u bereid om een reisverzekering af te sluiten?",
-    "Heeft u speciale dieetwensen of voedselrestricties?",
-    "Bent u van plan om excursies te boeken tijdens uw vakantie?",
-    "Hoe belangrijk is het voor u om lokale gerechten te proberen tijdens uw vakantie?",
-    "Wat is uw favoriete vrijetijdsactiviteit?"
-);
-
-// Punten per land
-$punten_per_land = array(
-    "Frankrijk" => range(1, 4),
-    "Thailand" => range(5, 8),
-    "Verenigde Staten" => range(9, 13),
-    "Kenia" => range(14, 17),
-    "Australië" => range(18, 21)
-);
-
-// Controleer of het formulier is ingediend
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Initialiseer een array om de antwoorden op te slaan
-    $antwoorden = array();
-
-    // Loop door de vragen en haal de antwoorden op
-    for ($i = 0; $i < count($vragen); $i++) {
-        // Controleer of er een antwoord is ingevuld voor de huidige vraag
-        if (isset($_POST["antwoord$i"])) {
-            // Voeg het antwoord toe aan de array
-            $antwoorden[] = $_POST["antwoord$i"];
-        }
-    }
-
-    // Sla de antwoorden op in de sessie
-    $_SESSION['antwoorden'] = $antwoorden;
-} elseif (!empty($_SESSION['antwoorden'])) {
-    // Als er al antwoorden in de sessie zijn opgeslagen, gebruik deze dan
-    $antwoorden = $_SESSION['antwoorden'];
-}
-
-// Functie om het reisadvies te bepalen op basis van behaalde punten
-function bepaalReisadvies($punten_per_land, $behaaldePunten) {
-    foreach ($punten_per_land as $land => $punten) {
-        if (in_array($behaaldePunten, $punten)) {
-            return $land;
-        }
-    }
-    return "Geen advies beschikbaar";
-}
-
-// Pagina-HTML begint hieronder
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -94,12 +22,58 @@ function bepaalReisadvies($punten_per_land, $behaaldePunten) {
     <h2>Resultaten van de vragenlijst:</h2>
 
     <?php
-    // Controleer of er antwoorden zijn ontvangen
+    session_start();
+
+    // Definieer de vragen
+    $vragen = array(
+        "Geef uw naam:",
+        // Voeg hier de andere vragen toe
+    );
+
+    // Definieer punten per land voor het reisadvies
+    $punten_per_land = array(
+        "Frankrijk" => range(1, 44),
+        "Thailand" => range(45, 89),
+        "Verenigde Staten" => range(90, 134),
+        "Kenia" => range(135, 179),
+        "Australië" => range(180, 210)
+    );
+
+    // Verwerk de ingediende antwoorden en ken punten toe
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $antwoorden = array();
+        $totaalPunten = 0;
+
+        for ($i = 0; $i < count($vragen); $i++) {
+            if (isset($_POST["antwoord$i"])) {
+                $antwoord = $_POST["antwoord$i"];
+                $punten = 10; // Elke vraag krijgt standaard 10 punten
+                $antwoorden[] = $antwoord;
+                $totaalPunten += $punten; // Voeg de punten toe aan het totaal
+            }
+        }
+
+        $_SESSION['antwoorden'] = $antwoorden;
+        $_SESSION['totaalPunten'] = $totaalPunten; // Sla het totaal aantal punten op in de sessie
+    } elseif (!empty($_SESSION['antwoorden'])) {
+        $antwoorden = $_SESSION['antwoorden'];
+        $totaalPunten = $_SESSION['totaalPunten']; // Haal het totaal aantal punten op uit de sessie
+    }
+
+    // Functie om het reisadvies te bepalen op basis van behaalde punten
+    function bepaalReisadvies($punten_per_land, $behaaldePunten) {
+        foreach ($punten_per_land as $land => $punten) {
+            if (in_array($behaaldePunten, $punten)) {
+                return $land;
+            }
+        }
+        return "Geen advies beschikbaar";
+    }
+    ?>
+
+    <?php
+    // Toon de ontvangen antwoorden
     if (!empty($antwoorden)) {
-        // Nu kun je de logica voor het verwerken van de antwoorden uitvoeren
-        // Hieronder wordt een eenvoudig voorbeeld gegeven
-        // Dit kun je aanpassen aan jouw specifieke behoeften
-        // In dit voorbeeld worden de antwoorden gewoon weergegeven
         echo "<h3>Ontvangen antwoorden:</h3>";
         echo "<ul>";
         foreach ($antwoorden as $key => $antwoord) {
@@ -107,13 +81,16 @@ function bepaalReisadvies($punten_per_land, $behaaldePunten) {
         }
         echo "</ul>";
 
-        // Bereken totaal aantal punten
-        $maxPunten = count($vragen);
-        $behaaldePunten = count($antwoorden);
-        $reisadvies = bepaalReisadvies($punten_per_land, $behaaldePunten);
+        // Toon het totaal aantal punten
+        echo "<h3>Totaal aantal punten:</h3>";
+        echo "<p>$totaalPunten</p>";
 
+        // Bereken het reisadvies
+        $reisadvies = bepaalReisadvies($punten_per_land, $totaalPunten);
+
+        // Toon het reisadvies
         echo "<h3>Reisadvies:</h3>";
-        echo "<p>Omdat je $behaaldePunten punten hebt behaald, is je reisadvies: $reisadvies</p>";
+        echo "<p>Omdat je $totaalPunten punten hebt behaald, is je reisadvies: $reisadvies</p>";
     } else {
         echo "<p>Er zijn geen antwoorden ontvangen.</p>";
     }
@@ -123,3 +100,8 @@ function bepaalReisadvies($punten_per_land, $behaaldePunten) {
 
 </body>
 </html>
+
+
+
+
+
