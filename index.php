@@ -21,7 +21,7 @@
 <!-- Voeg deze code toe onder de header afbeelding -->
 <div class="small-boxes">
     <div class="small-box">
-        <p>Last Minute</p>
+        <p>Kindervakantie</p>
     </div>
     <div class="small-box">
         <p>Stedentrips</p>
@@ -30,7 +30,7 @@
         <p>Autovakanties</p>
     </div>
     <div class="small-box">
-        <p>Verre reizen</p>
+        <p>Vliegvakanties</p>
     </div>
     <div class="small-box">
         <p>Rondreizen</p>
@@ -42,7 +42,7 @@
         <p>Bursreizen</p>
     </div>
     <div class="small-box">
-        <p id="rood">TUI Deals</p>
+        <p id="rood"> Aanbiedingen</p>
     </div>
 </div>
 <div class="container">
