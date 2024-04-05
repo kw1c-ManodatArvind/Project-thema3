@@ -1,6 +1,5 @@
 <div class="navbar" style="background-color: #71cbf4;">
-    <a href="../index.php"><img src="../images/logo.png" alt="Logo" class="logo"></a>
-    <button class="menu-toggle" aria-label="Menu openen/sluiten">&#9776;</button>
+    <a href="../index.php"><img src="/C:/inetpub/wwwroot/Project-thema3/images/logo.png" alt="" class="logo"></a>
     <ul class="nav-links">
         <li><a href="../index.php">Home</a></li>
         <li><a href="../Pages/resultaten.php">Resultaten</a></li>
