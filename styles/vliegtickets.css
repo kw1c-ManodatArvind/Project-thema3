@@ -166,7 +166,8 @@
     margin: 20px 0;
 }
 
-.image-container {
+.image-container
+{
     background-color: #fff;
 }
 
@@ -347,12 +348,14 @@
     padding: 30px 20px;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 414px)
+{
     .navbar {
         padding: 10px 6px; /* Aangepaste padding voor kleinere schermen */
     }
 
-    .nav-links li a {
+    .nav-links li a
+    {
         font-size: 9px;
     }
 
@@ -364,7 +367,8 @@
         font-size: 8px;
     }
 
-    .logo {
+    .logo
+    {
         height: 20px; /* Aangepaste hoogte voor kleinere schermen */
     }
 

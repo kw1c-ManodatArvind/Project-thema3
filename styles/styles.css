@@ -258,3 +258,31 @@ hr {
         width: 180px;
     }
 }
+.small-boxes {
+    float: right; /* Plaats de small-boxes rechts */
+    margin-top: 20px; /* Pas deze marge aan zoals gewenst */
+    text-align: right; /* Uitlijnen van de tekst rechts */
+}
+
+.small-box {
+    width: calc(10% - 10px); /* Bereken de breedte van elk vak */
+    height: 50px; /* Pas de hoogte aan zoals gewenst */
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    padding-left: 400px;
+    padding-right: 400px;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Voeg ondermarge toe tussen de vakken */
+}
+
+.small-box:hover {
+    background-color: lightblue; /* Verander de achtergrondkleur naar lichtblauw wanneer gehoverd */
+}
+
+.small-box p {
+    margin: 0;
+}
+#rood
+{
+    color: red;
+}
