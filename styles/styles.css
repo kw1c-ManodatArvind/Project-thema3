@@ -73,6 +73,19 @@
     margin-top: 20px;
 }
 
+.questionnaire-link {
+    position: fixed; /* Zorgt ervoor dat het element vast blijft staan, zelfs als de gebruiker scrollt */
+    bottom: 20px; /* Afstand vanaf de onderkant van het scherm */
+    right: 20px; /* Afstand vanaf de rechterkant van het scherm */
+    z-index: 999; /* Zorgt ervoor dat de link bovenop andere elementen ligt */
+}
+
+.questionnaire-img {
+    width: 100px; /* Aanpassen aan de gewenste breedte */
+    height: auto; /* Behoudt de aspect ratio van de afbeelding */
+    border-radius: 50%; /* Maakt de afbeelding rond */
+}
+
 .blue-boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

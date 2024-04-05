@@ -52,6 +52,9 @@
         <img src="images/Familie.jpg" alt="Image 3">
         <img src="images/Logo1.jpg" alt="Image 4">
     </div>
+    <a href="Pages/Vragenlijst.php" class="questionnaire-link">
+        <img src="images/chatbutton.png" alt="Vragenlijst" class="questionnaire-img">
+    </a>
     <p class="description">Relaxed boeken met TUI Garanties en Verzekeringen.</p>
     <div class="blue-boxes">
         <div class="blue-box">Omruilgarantie</div>

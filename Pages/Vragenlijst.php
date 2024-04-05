@@ -1,4 +1,3 @@
-<?php include('includes/vragen.php'); ?>
 
 <!DOCTYPE html>
 <html>
@@ -23,6 +22,7 @@
 </div>
 
 <?php
+
 // Begroeting op basis van het tijdstip van de dag
 date_default_timezone_set('Europe/Amsterdam');
 $hour = date('H');
@@ -42,16 +42,77 @@ echo "<p>Bedankt dat je de tijd neemt om onze vragenlijst in te vullen. Jouw fee
 
 <form method="post" action="resultaten.php">
     <?php
+    // Array met vragen en opties
+    $vragen = array(
+        "Geef uw naam:",
+        "Hoeveel dagen gaat u op vakantie?",
+        "Hoe vaak boekt u een vakantie?",
+        "Wat is uw favoriete vakantiebestemming?",
+        "Welk type accommodatie verkiest u tijdens uw vakantie?",
+        "Wat is uw belangrijkste factor bij het kiezen van een vakantiebestemming?",
+        "Hoe lang van tevoren boekt u meestal uw vakantie?",
+        "Wat is uw favoriete vervoermiddel tijdens een vakantie?",
+        "Wat is uw budget voor een gemiddelde vakantie?",
+        "Heeft u ooit een vakantie geboekt via een reisbureau?",
+        "Hoe belangrijk is het voor u om te weten wat anderen van een vakantiebestemming vinden voordat u boekt?",
+        "Wat voor soort activiteiten doet u het liefst tijdens uw vakantie?",
+        "Hoe belangrijk is het voor u dat de vakantiebestemming kindvriendelijk is?",
+        "Welk type weer prefereert u tijdens uw vakantie?",
+        "Welk continent zou u graag willen verkennen tijdens uw volgende vakantie?",
+        "Hoe ver wilt u reizen voor uw vakantie?",
+        "Bent u bereid om een reisverzekering af te sluiten?",
+        "Heeft u speciale dieetwensen of voedselrestricties?",
+        "Bent u van plan om excursies te boeken tijdens uw vakantie?",
+        "Hoe belangrijk is het voor u om lokale gerechten te proberen tijdens uw vakantie?",
+        "Wat is uw favoriete vrijetijdsactiviteit?"
+    );
+
+    // Opties voor meerkeuzevragen
+    $opties = array(
+        "",
+        array("1-7 dagen", "8-14 dagen", "15-21 dagen", "Meer dan 21 dagen"),
+        array("Minder dan eens per jaar", "Eens per jaar", "Meerdere keren per jaar", "Eens per maand"),
+        array("Europa", "Azië", "Amerika", "Afrika", "Oceanië"),
+        array("Hotel", "Appartement", "Villa", "Camping"),
+        array("Prijs", "Weer", "Cultuur", "Natuur"),
+        array("Minder dan een maand", "1-3 maanden", "3-6 maanden", "Meer dan 6 maanden"),
+        array("Auto", "Vliegtuig", "Trein", "Boot"),
+        array("Minder dan €500", "€500-€1000", "€1000-€2000", "Meer dan €2000"),
+        array("Een keertje", "Paar keer", "Meerdere keren per jaar", "Nooit"),
+        array("Heel belangrijk", "Redelijk belangrijk", "Niet zo belangrijk", "Niet belangrijk"),
+        array("Wandelen", "Strandactiviteiten", "Stadsbezoek", "Avontuurlijke activiteiten"),
+        array("Heel belangrijk", "Redelijk belangrijk", "Niet zo belangrijk", "Niet belangrijk"),
+        array("Zonnig", "Regen" ,"Bewolkt" ,"Sneeuw"),
+        array("Europa", "Azië", "Amerika", "Afrika", "Oceanië"),
+        array("0-500 km", "500-1000 km","1000-1500 km"," Verder dan 1500 km"),
+        array("Ja", "Nee"),
+        array("Ja", "Nee"),
+        array("Ja", "Nee"),
+        array("Heel belangrijk", "Redelijk belangrijk", "Niet zo belangrijk", "Niet belangrijk"),
+        array("Sporten", "Winkelen", "Musea bezoeken", "Uitgaan")
+
+    );
+
+    // Punten voor elke vraag
+    $punten = array(
+        "Geef uw naam:" => 1, // Voorbeeld: geef 1 punt voor het invullen van de naam
+        "Hoeveel dagen gaat u op vakantie?" => 1, // Voeg hier punten toe voor andere vragen
+        // Voeg voor elke vraag in de vragenlijst punten toe volgens jouw criteria
+    );
+
+    // Totaal aantal punten
+    $totaalPunten = 0;
+
     // Loop door de vragen en toon ze met de opties
     for ($i = 0; $i < count($vragen); $i++) {
         echo "<p>Vraag " . ($i + 1) . ": " . $vragen[$i] . "</p>";
-
         // Controleer of de vraag radiobuttons moet hebben
         if ($i == 16 || $i == 17 || $i == 18 || $i == 19 || $i == 20) {
             // Toon radiobuttons voor specifieke vragen
             foreach ($opties[$i] as $optie) {
                 echo "<label><input type='radio' name='antwoord$i' value='$optie' required> $optie</label><br>";
             }
+
         } elseif ($i == 1) {
             // Toon antwoordopties voor vraag 2
             echo "<select name='antwoord$i'>";
@@ -59,7 +120,9 @@ echo "<p>Bedankt dat je de tijd neemt om onze vragenlijst in te vullen. Jouw fee
             foreach ($opties[$i] as $optie) {
                 echo "<option value='" . $optie . "'>" . $optie . "</option>";
             }
+
             echo "</select><br>";
+
         } elseif ($i == 0) {
             // Toon een tekstveld voor de eerste vraag
             echo "<input type='text' name='antwoord$i' required><br>";
@@ -67,6 +130,7 @@ echo "<p>Bedankt dat je de tijd neemt om onze vragenlijst in te vullen. Jouw fee
             // Toon een dropdownmenu voor andere vragen
             echo "<select name='antwoord$i'>";
             echo "<option value='' selected>Klik hier om jouw antwoord te selecteren</option>";
+
             foreach ($opties[$i] as $optie) {
                 echo "<option value='" . $optie . "'>" . $optie . "</option>";
             }
@@ -74,9 +138,43 @@ echo "<p>Bedankt dat je de tijd neemt om onze vragenlijst in te vullen. Jouw fee
         }
     }
     ?>
-
     <input type="submit" name="submit" value="Verzend">
 </form>
+
+<?php
+// Voeg hier de PHP-code toe voor het verwerken van de antwoorden en de punten op resultaten.php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Array om antwoorden op te slaan
+    $antwoorden = array();
+
+    // Loop door de antwoorden en sla ze op in de array
+    for ($i = 0; $i < count($vragen); $i++) {
+        // Controleer of de vraag is beantwoord
+        if (isset($_POST["antwoord$i"])) {
+            // Voeg het antwoord toe aan de array
+            $antwoorden[$vragen[$i]] = $_POST["antwoord$i"];
+            // Controleer of de vraag correct is beantwoord en voeg punten toe aan het totaal
+            if (isset($punten[$vragen[$i]])) {
+                $totaalPunten += $punten[$vragen[$i]];
+            }
+        } else {
+            // Geef een standaardwaarde als het antwoord niet is ingediend
+            $antwoorden[$vragen[$i]] = "Geen antwoord gegeven";
+        }
+    }
+
+    // Hier kun je de antwoorden verder verwerken, bijvoorbeeld opslaan in een database of afdrukken
+    // Afdrukken van de antwoorden ter controle
+    echo "<h2>Ontvangen antwoorden:</h2>";
+    foreach ($antwoorden as $vraag => $antwoord) {
+        echo "<p><strong>$vraag:</strong> $antwoord</p>";
+    }
+
+    // Afdrukken van het totaal aantal punten
+    echo "<h2>Totaal aantal punten:</h2>";
+    echo "<p>$totaalPunten</p>";
+}
+?>
 
 </body>
 </html>
