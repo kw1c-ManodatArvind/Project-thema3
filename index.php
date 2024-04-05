@@ -21,28 +21,28 @@
 <!-- Voeg deze code toe onder de header afbeelding -->
 <div class="small-boxes">
     <div class="small-box">
-        <p>Text 1</p>
+        <p>Last Minute</p>
     </div>
     <div class="small-box">
-        <p>Text 1</p>
+        <p>Stedentrips</p>
     </div>
     <div class="small-box">
-        <p>Text 1</p>
+        <p>Autovakanties</p>
     </div>
     <div class="small-box">
-        <p>Text 1</p>
+        <p>Verre reizen</p>
     </div>
     <div class="small-box">
-        <p>Text 1</p>
+        <p>Rondreizen</p>
     </div>
     <div class="small-box">
-        <p>Text 1</p>
+        <p>Wintersport</p>
     </div>
     <div class="small-box">
-        <p>Text 1</p>
+        <p>Bursreizen</p>
     </div>
     <div class="small-box">
-        <p>Text 1</p>
+        <p id="rood">TUI Deals</p>
     </div>
 </div>
 <div class="container">
@@ -67,46 +67,46 @@
             <h2>Onze populairste bestemmingen</h2>
             <div class="image-wrapper">
                 <img id="curacao" src="images/curacao.jpg" alt="Curacao">
-                <p>dolor sit amet</p>
+                <p>Op een vakantie op Curacao zijn de witte stranden met palmbomen in grote getale aanwezig.</p>
             </div>
             <div class="image-wrapper">
                 <img src="images/spanje.jpg" alt="Spanje">
-                <p>dolor sit amet</p>
+                <p>Hét land voor een goedkope en zonnige all inclusive vakanties.</p>
             </div>
             <div class="image-wrapper">
                 <img src="images/griekenland.jpg" alt="Griekeland">
-                <p>dolor sit amet</p>
+                <p>Geniet van een heerlijke zonvakantie aan de Spaanse Costa's of ontdek de temperamentvolle steden.</p>
             </div>
             <div class="image-wrapper">
                 <img src="images/turkije2.jpg" alt="Turkije">
-                <p>dolor sit amet</p>
+                <p>De zon schijnt en de zee is in dit Zuid- Europese land altijd binnen handbereik.</p>
             </div>
             <div class="image-wrapper">
                 <img src="images/gran_canaria2.jpg" alt="Gran Canaria">
-                <p>dolor sit amet</p>
+                <p>Van indrukwekkende vulkaankraters tot prachtige stranden. Op Gran Canaaria vind je het allemaal!</p>
             </div>
         </div>
         <div class="column">
             <h2>Onze meest geboekte hotels</h2>
             <div class="image-wrapper">
                 <img src="images/chogogo_resort_bonaire.jpg" alt="Hotel 1">
-                <p>dolor sit amet</p>
+                <p>Turkse Riviéra, Turkije</p>
             </div>
             <div class="image-wrapper">
                 <img src="images/chogogo_resort_curacao.jpg" alt="Hotel 2">
-                <p>dolor sit amet</p>
+                <p>Jan Thiel Baai, Curacao</p>
             </div>
             <div class="image-wrapper">
                 <img src="images/long_beach_alanya.jpg" alt="Hotel 3">
-                <p>dolor sit amet</p>
+                <p>Turkse Riviéra, Turkije</p>
             </div>
             <div class="image-wrapper">
                 <img src="images/sindbad-club-egypte.jpg" alt="Hotel 4">
-                <p>dolor sit amet</p>
+                <p> Kralendijk, Bonaire</p>
             </div>
             <div class="image-wrapper">
                 <img src="images/delphin_imperial.jpg" alt="Hotel 5">
-                <p>dolor sit amet</p>
+                <p>Hurghada,  Egypte</p>
             </div>
         </div>
     </div>
