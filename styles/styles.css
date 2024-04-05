@@ -98,6 +98,11 @@
     padding: 20px;
 }
 
+#curacao
+{
+    width: 122px;
+}
+
 .image-columns {
     display: flex;
     justify-content: space-between;
@@ -246,5 +251,10 @@ hr {
     .image-wrapper p {
         margin-left: 0; /* Verwijder de linker marge van de tekst naast de afbeeldingen voor kleinere schermen */
         margin-top: 10px; /* Voeg een bovenmarge toe aan de tekst naast de afbeeldingen voor kleinere schermen */
+    }
+
+    #curacao
+    {
+        width: 180px;
     }
 }

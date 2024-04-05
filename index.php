@@ -66,7 +66,7 @@
         <div class="column">
             <h2>Onze populairste bestemmingen</h2>
             <div class="image-wrapper">
-                <img src="images/curacao.jpg" alt="Curacao" width="122px">
+                <img id="curacao" src="images/curacao.jpg" alt="Curacao">
                 <p>dolor sit amet</p>
             </div>
             <div class="image-wrapper">
