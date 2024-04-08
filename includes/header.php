@@ -1,5 +1,8 @@
+<!-- Navbar met aangepaste achtergrondkleur -->
 <div class="navbar" style="background-color: #71cbf4;">
-    <a href="../index.php"><img src="/C:/inetpub/wwwroot/Project-thema3/images/logo.png" alt="" class="logo"></a>
+    <!-- Logo met link naar de homepage -->
+    <a href="../index.php"><img src="../images/logo.png" alt="" class="logo"></a>
+    <!-- Navigatielinks -->
     <ul class="nav-links">
         <li><a href="../index.php">Home</a></li>
         <li><a href="../Pages/resultaten.php">Resultaten</a></li>

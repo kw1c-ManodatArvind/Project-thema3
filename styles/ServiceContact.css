@@ -1,17 +1,24 @@
 /*
-Auteur: Danijel Jovanovic
-Datum: 9-4-2024.
+   Auteur: Danijel Jovanovic
+   Datum: 9-4-2024
 */
+
+/* Algemene opmaak voor de body van de website */
 body
 {
     font-family: 'Themundayfreeversion-Regular', Arial, sans-serif; /* Gebruik het nieuwe lettertype, met back-ups van generieke lettertypes */
+    text-align: center; /* Centreren van de inhoud van de body */
 }
+
+/* Definieer aangepaste lettertype met bron en gewicht */
 @font-face
 {
     font-family: 'Themundayfreeversion-Regular'; /* Geef een naam aan het lettertype */
     src: url('../fonts/Themundayfreeversion-Regular.ttf') format('truetype'); /* Geef het pad naar het font-bestand en het formaat op */
     font-weight: normal; /* Specificeer dat het lettertype normaal gewicht heeft */
 }
+
+/* Opmaak voor de navigatiebalk */
 .navbar
 {
     display: flex;
@@ -20,6 +27,7 @@ body
     padding: 10px 20px;
 }
 
+/* Opmaak voor de lijst met navigatielinks */
 .nav-links
 {
     list-style-type: none;
@@ -27,38 +35,39 @@ body
     padding: 0;
 }
 
+/* Opmaak voor individuele navigatielinks */
 .nav-links li
 {
     display: inline;
     margin-right: 20px;
 }
 
+/* Specifieke opmaak voor de laatste navigatielink om de rechtermarge te verwijderen */
 .nav-links li:last-child
 {
     margin-right: 0;
 }
 
+/* Opmaak voor de stijl van de navigatielinks */
 .nav-links li a
 {
     text-decoration: none;
     color: white;
 }
 
+/* Opmaak voor het logo */
 .logo
 {
     height: 50px; /* aanpassen aan de gewenste hoogte */
 }
 
+/* Opmaak voor headerafbeeldingen */
 .header-img
 {
     width: 100%;
 }
 
-body
-{
-    text-align: center; /* Centreren van de inhoud van de body */
-}
-
+/* Opmaak voor de container */
 .container
 {
     display: flex; /* Gebruik flexbox voor layout */
@@ -66,6 +75,7 @@ body
     margin-top: 50px; /* Ruimte bovenaan */
 }
 
+/* Opmaak voor decoratieve links */
 .decorative-links
 {
     display: inline-block; /* Zet de rijen naast elkaar */
@@ -74,6 +84,7 @@ body
     text-align: left; /* Links uitlijnen van de links */
 }
 
+/* Opmaak voor koppen in decoratieve links */
 .decorative-links h2
 {
     color: navy;
@@ -81,6 +92,7 @@ body
     margin-bottom: 10px;
 }
 
+/* Opmaak voor lijsten in decoratieve links */
 .decorative-links ul
 {
     list-style: none;
@@ -88,11 +100,13 @@ body
     margin: 0;
 }
 
+/* Opmaak voor individuele items in decoratieve links */
 .decorative-links li
 {
     margin-bottom: 15px;
 }
 
+/* Opmaak voor decoratieve link */
 .decorative-links a
 {
     display: block; /* Maak van de links blokelementen */
@@ -103,6 +117,7 @@ body
     text-decoration: none;
 }
 
+/* Opmaak voor hover-effect op decoratieve links */
 .decorative-links a:hover
 {
     background-color: #71cbf4; /* Achtergrondkleur veranderen bij hover */
@@ -110,11 +125,13 @@ body
     text-decoration: none;
 }
 
+/* Opmaak voor sectie met meer hulp */
 .more-help
 {
     margin-top: 50px;
 }
 
+/* Opmaak voor kop in sectie met meer hulp */
 .more-help h2
 {
     color: navy;
@@ -122,6 +139,7 @@ body
     font-weight: bold;
 }
 
+/* Opmaak voor hulpmogelijkheden */
 .help-options
 {
     margin-top: 20px;
@@ -130,6 +148,7 @@ body
     justify-content: center;
 }
 
+/* Opmaak voor individuele hulpmogelijkheid */
 .help-option
 {
     width: calc(33.33% - 10px);
@@ -142,11 +161,13 @@ body
     color: navy; /* Tekstkleur */
 }
 
+/* Opmaak voor hover-effect op hulpmogelijkheid */
 .help-option:hover
 {
     background-color: rgba(113, 203, 244, 0.5); /* Toon een lichte achtergrondkleur bij hover */
 }
 
+/* Opmaak voor koppen en alinea's over TUI */
 .about-tui h2
 {
     color: navy;
@@ -158,6 +179,7 @@ body
     color: navy;
 }
 
+/* Opmaak voor kop van sociale media sectie */
 .social-media-header
 {
     margin-top: 20px;
@@ -165,17 +187,20 @@ body
     color: navy;
 }
 
+/* Opmaak voor sociale media links */
 .social-media
 {
     margin-top: 10px;
 }
 
+/* Opmaak voor individuele sociale media links */
 .social-media a
 {
     display: inline-block;
     margin-right: 10px;
 }
 
+/* Opmaak voor de footer */
 .footer
 {
     background-color: #f2f2f2;
@@ -183,6 +208,7 @@ body
     text-align: center;
 }
 
+/* Opmaak voor linker-, midden- en rechtergedeelte van de footer */
 .footer-left,
 .footer-center,
 .footer-right
@@ -193,6 +219,7 @@ body
     text-align: left;
 }
 
+/* Opmaak voor koppen in de footer */
 .footer-left h3,
 .footer-center h3,
 .footer-right h3
@@ -200,6 +227,7 @@ body
     color: #003366;
 }
 
+/* Opmaak voor lijsten in de footer */
 .footer-left ul,
 .footer-center ul,
 .footer-right ul
@@ -208,6 +236,7 @@ body
     padding: 0;
 }
 
+/* Opmaak voor individuele items in de footer */
 .footer-left ul li,
 .footer-center ul li,
 .footer-right ul li
@@ -215,23 +244,27 @@ body
     margin-bottom: 10px;
 }
 
+/* Opmaak voor de onderste sectie van de footer */
 .footer-bottom
 {
     margin-top: 20px;
 }
 
+/* Opmaak voor de nieuwsbriefsectie */
 .newsletter
 {
     background-color: #f2f2f2; /* Grijs vlak */
     padding: 20px 0;
 }
 
+/* Opmaak voor tekst in de nieuwsbriefsectie */
 .newsletter span,
 .newsletter p
 {
     color: #003366; /* Donkerblauwe tekstkleur */
 }
 
+/* Opmaak voor invoerveld en knop in de nieuwsbriefsectie */
 .newsletter form input[type="email"],
 .newsletter form button
 {
@@ -242,17 +275,20 @@ body
     color: #003366; /* Donkerblauwe tekstkleur */
 }
 
+/* Opmaak voor invoerveld in de nieuwsbriefsectie */
 .newsletter form input[type="email"]
 {
     width: 200px;
 }
 
+/* Opmaak voor knop in de nieuwsbriefsectie */
 .newsletter form button
 {
     background-color: #71cbf4;
     cursor: pointer;
 }
 
+/* Opmaak voor het footer-logo */
 .footer-logo
 {
     display: block;
@@ -260,12 +296,14 @@ body
     max-width: 150px;
 }
 
+/* Opmaak voor 'Werken bij TUI' sectie */
 .work-at-tui
 {
     display: inline-block;
     margin-top: 20px;
 }
 
+/* Opmaak voor links in 'Werken bij TUI' sectie */
 .work-at-tui a
 {
     color: #003366;
@@ -276,19 +314,23 @@ body
     text-decoration: none;
 }
 
+/* Opmaak voor hover-effect op links in 'Werken bij TUI' sectie */
 .work-at-tui a:hover
 {
     text-decoration: underline;
 }
 
+/* Opmaak voor onderste navigatiebalk */
 .navbarOnder
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 20px;
+    background-color: #71cbf4;
 }
 
+/* Media query voor schermen met maximale breedte van 414px */
 @media screen and (max-width: 414px)
 {
     .navbar
@@ -301,7 +343,8 @@ body
         font-size: 8px;
     }
 
-    .logo {
+    .logo
+    {
         height: 20px; /* Aangepaste hoogte voor kleinere schermen */
     }
 
@@ -309,5 +352,4 @@ body
     {
         width: 300px;
     }
-
 }

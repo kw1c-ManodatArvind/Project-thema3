@@ -1,60 +1,90 @@
 /*
-Auteur: Arvind Manodat
-Datum: 9-4-2024.
+   Auteur: Arvind Manodat
+   Datum: 9-4-2024
 */
+
+/* Algemene opmaak voor de body van de website */
 body
 {
     font-family: 'Themundayfreeversion-Regular', Arial, sans-serif; /* Gebruik het nieuwe lettertype, met back-ups van generieke lettertypes */
 }
+
+/* Definieer aangepaste lettertype met bron en gewicht */
 @font-face
 {
     font-family: 'Themundayfreeversion-Regular'; /* Geef een naam aan het lettertype */
     src: url('../fonts/Themundayfreeversion-Regular.ttf') format('truetype'); /* Geef het pad naar het font-bestand en het formaat op */
     font-weight: normal; /* Specificeer dat het lettertype normaal gewicht heeft */
 }
-.navbar {
+
+/* Opmaak voor de navigatiebalk */
+.navbar
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #71cbf4;
+    background-color: #71cbf4; /* Achtergrondkleur van de navigatiebalk */
 }
 
-.nav-links {
+/* Opmaak voor de lijst met navigatielinks */
+.nav-links
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.nav-links li {
+/* Opmaak voor individuele navigatielinks */
+.nav-links li
+{
     display: inline;
     margin-right: 20px;
 }
 
-.nav-links li:last-child {
+/* Specifieke opmaak voor de laatste navigatielink om de rechtermarge te verwijderen */
+.nav-links li:last-child
+{
     margin-right: 0;
 }
 
-.nav-links li a {
+/* Opmaak voor de stijl van de navigatielinks */
+.nav-links li a
+{
     text-decoration: none;
     color: white;
 }
 
-.logo {
+/* Opmaak voor het logo */
+.logo
+{
     height: 50px; /* aanpassen aan de gewenste hoogte */
 }
 
-.header-img {
+/* Opmaak voor headerafbeeldingen */
+.header-img
+{
     width: 100%;
 }
 
-.small-boxes {
+/* Opmaak voor de container */
+.container
+{
+    text-align: center;
+    padding: 20px;
+}
+
+/* Opmaak voor kleine vakken */
+.small-boxes
+{
     float: right; /* Plaats de small-boxes rechts */
     margin-top: 20px; /* Pas deze marge aan zoals gewenst */
     text-align: right; /* Uitlijnen van de tekst rechts */
 }
 
-.small-box {
+/* Opmaak voor individuele kleine vakken */
+.small-box
+{
     width: calc(10% - 10px); /* Bereken de breedte van elk vak */
     height: 50px; /* Pas de hoogte aan zoals gewenst */
     background-color: aliceblue;
@@ -65,85 +95,106 @@ body
     margin-bottom: 10px; /* Voeg ondermarge toe tussen de vakken */
 }
 
+/* Opmaak voor hover-effect op kleine vakken */
+.small-box:hover
+{
+    background-color: lightblue; /* Verander de achtergrondkleur naar lichtblauw wanneer gehoverd */
+}
 
+/* Opmaak voor tekst binnen kleine vakken */
 .small-box p {
+
     margin: 0;
 }
 
-.container {
-    text-align: center;
-    padding: 20px;
-}
-
-.square-images {
+/* Opmaak voor vierkante afbeeldingen */
+.square-images
+{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto; /* Laat de rijhoogte automatisch aanpassen aan de inhoud */
-    grid-gap: 10px; /* Je kunt deze waarde aanpassen om de ruimte tussen de afbeeldingen te verkleinen */
+    grid-gap: 10px; /* Ruimte tussen de afbeeldingen */
     width: 100px;
 }
 
-.description {
+/* Opmaak voor beschrijvingen */
+.description
+{
     margin-top: 20px;
 }
 
-.questionnaire-link {
+/* Opmaak voor de link naar de vragenlijst */
+.questionnaire-link
+{
     position: fixed; /* Zorgt ervoor dat het element vast blijft staan, zelfs als de gebruiker scrollt */
     bottom: 20px; /* Afstand vanaf de onderkant van het scherm */
     right: 20px; /* Afstand vanaf de rechterkant van het scherm */
     z-index: 999; /* Zorgt ervoor dat de link bovenop andere elementen ligt */
 }
 
-.questionnaire-img {
+/* Opmaak voor de afbeelding van de vragenlijst */
+.questionnaire-img
+{
     width: 100px; /* Aanpassen aan de gewenste breedte */
     height: auto; /* Behoudt de aspect ratio van de afbeelding */
     border-radius: 50%; /* Maakt de afbeelding rond */
 }
 
-.blue-boxes {
+/* Opmaak voor blauwe vakken */
+.blue-boxes
+{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
-.blue-box {
+/* Opmaak voor individuele blauwe vakken */
+.blue-box
+{
     background-color: #71cbf4;
     color: white;
     padding: 20px;
 }
 
-#curacao
+/* Opmaak voor afbeeldingskolommen */
+.image-columns
 {
-    width: 122px;
-}
-
-.image-columns {
     display: flex;
-    justify-content: space-between;
+
     margin-top: 20px;
 }
 
-.column {
+/* Opmaak voor individuele kolommen */
+.column
+{
     flex: 1;
     margin-right: 20px;
 }
 
-.column:last-child {
+/* Specifieke opmaak voor de laatste kolom om de rechtermarge te verwijderen */
+.column:last-child
+{
     margin-right: 0;
 }
 
-.image-wrapper {
+/* Opmaak voor afbeeldingswikkeling */
+.image-wrapper
+{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     position: relative; /* Hiermee kunnen we de absolute positie van de lijn instellen */
 }
 
-.image-wrapper p {
+/* Opmaak voor tekst naast afbeeldingen */
+.image-wrapper p
+{
     margin-left: 20px;
 }
 
-.image-wrapper:after {
+/* Pseudo-element voor de lijn naast de afbeeldingen */
+.image-wrapper:after
+{
     content: ''; /* Dit creëert een pseudo-element */
     position: absolute; /* Absoluut positioneren ten opzichte van de parent */
     bottom: 0; /* Plaats het onderaan het ouder-element */
@@ -153,150 +204,131 @@ body
     background-color: #ccc; /* Kleur van de lijn */
 }
 
-hr {
+/* Opmaak voor horizontale lijn */
+hr
+{
     flex: 1;
     border: none;
     border-top: 1px solid #ccc;
     margin: 0 20px;
 }
 
-.image-wrapper img {
+/* Opmaak voor afbeeldingen */
+.image-wrapper img
+{
     max-width: 100%;
     height: auto;
 }
 
-.image-wrapper p {
+/* Opmaak voor tekst naast afbeeldingen */
+.image-wrapper p
+{
     margin-left: 20px;
 }
 
-.footer {
+/* Opmaak voor de footer */
+.footer
+{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 20px 20px;
-    background-color: #71cbf4;
+    background-color: #71cbf4; /* Achtergrondkleur van de footer */
 }
 
-.footer-logo {
+/* Opmaak voor het footer-logo */
+.footer-logo
+{
     height: 40px; /* Pas dit aan aan de gewenste hoogte */
     margin-right: 20px;
 }
-
-@media screen and (max-width: 414px) {
+#curacao
+{
+    width: 122px;
+}
+/* Media query voor schermen met maximale breedte van 414px */
+@media screen and (max-width: 414px)
+{
     .navbar {
         padding: 10px 6px; /* Aangepaste padding voor kleinere schermen */
     }
 
-    .nav-links li a {
+    .nav-links li a
+    {
         font-size: 8px;
     }
 
-    .logo {
+    .logo
+    {
         height: 20px; /* Aangepaste hoogte voor kleinere schermen */
     }
 
-    .header-img {
+    .header-img
+    {
         display: none; /* Verberg de header afbeelding op kleinere schermen */
     }
 
-    .container {
+    .container
+    {
         padding: 10px; /* Verklein de padding van de container op kleinere schermen */
     }
 
-
-    .square-images img {
+    .square-images img
+    {
         height: 115px;
     }
 
-    .image-wrapper img {
+    .image-wrapper img
+    {
         width: 50%;
         height: auto;
         max-width: 100%; /* Maximale breedte van de afbeelding */
         aspect-ratio: 1; /* Behoudt de aspect ratio van de afbeelding (vierkant) */
     }
 
-    .small-boxes {
-        float: right; /* Plaats de small-boxes rechts */
-        margin-top: 20px; /* Pas deze marge aan zoals gewenst */
-        text-align: right; /* Uitlijnen van de tekst rechts */
+    .small-boxes
+    {
+        display: none; /* Verberg kleine vakken op kleinere schermen */
     }
 
-    .small-boxes {
-        float: right; /* Plaats de small-boxes rechts */
-        margin-top: 20px; /* Pas deze marge aan zoals gewenst */
-        text-align: right; /* Uitlijnen van de tekst rechts */
-        display: none;
+    .small-box p
+    {
+        display: none; /* Verberg tekst binnen kleine vakken op kleinere schermen */
     }
 
-    .small-box {
-        width: calc(10% - 10px); /* Bereken de breedte van elk vak */
-        height: 50px; /* Pas de hoogte aan zoals gewenst */
-        background-color: aliceblue;
-        border: 1px solid #ccc;
-        padding-left: 400px;
-        padding-right: 400px;
-        box-sizing: border-box;
-        margin-bottom: 10px; /* Voeg ondermarge toe tussen de vakken */
-        display: none;
-    }
-
-
-    .small-box p {
-        margin: 0;
-        display: none;
-    }
-
-    .blue-boxes {
+    .blue-boxes
+    {
         grid-template-columns: repeat(1, 1fr); /* Verander het aantal kolommen naar 1 voor kleinere schermen */
     }
 
-    .image-columns {
+    .image-columns
+    {
         flex-direction: column; /* Verander de richting van de flexbox naar kolommen voor kleinere schermen */
     }
 
-    .column {
+    .column
+    {
         margin-right: 0; /* Verwijder de rechtermarge van de kolommen voor kleinere schermen */
         margin-bottom: 20px; /* Voeg een bodemmarge toe aan de kolommen voor kleinere schermen */
     }
 
-    .image-wrapper {
+    .image-wrapper
+    {
         flex-direction: column; /* Verander de richting van de flexbox naar kolommen voor kleinere schermen */
     }
 
-    .image-wrapper p {
+    .image-wrapper p
+    {
         margin-left: 0; /* Verwijder de linker marge van de tekst naast de afbeeldingen voor kleinere schermen */
         margin-top: 10px; /* Voeg een bovenmarge toe aan de tekst naast de afbeeldingen voor kleinere schermen */
     }
 
     #curacao
     {
-        width: 180px;
+        width: 180px; /* Aangepaste breedte voor kleinere schermen */
     }
 }
-.small-boxes {
-    float: right; /* Plaats de small-boxes rechts */
-    margin-top: 20px; /* Pas deze marge aan zoals gewenst */
-    text-align: right; /* Uitlijnen van de tekst rechts */
-}
-
-.small-box {
-    width: calc(10% - 10px); /* Bereken de breedte van elk vak */
-    height: 50px; /* Pas de hoogte aan zoals gewenst */
-    background-color: aliceblue;
-    border: 1px solid #ccc;
-    padding-left: 400px;
-    padding-right: 400px;
-    box-sizing: border-box;
-    margin-bottom: 10px; /* Voeg ondermarge toe tussen de vakken */
-}
-
-.small-box:hover {
-    background-color: lightblue; /* Verander de achtergrondkleur naar lichtblauw wanneer gehoverd */
-}
-
-.small-box p {
-    margin: 0;
-}
+/* Opmaak voor rode elementen met id 'rood' */
 #rood
 {
     color: red;
