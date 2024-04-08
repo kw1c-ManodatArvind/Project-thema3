@@ -9,7 +9,7 @@ Datum: 9-4-2024
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tui website</title>
-    <link rel="stylesheet" href="../styles/cruises.css">
+    <link rel="stylesheet" href="../styles/resultaten.css">
 </head>
 <body>
 <div class="navbar">
