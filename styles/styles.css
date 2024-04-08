@@ -173,12 +173,12 @@ hr {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background-color: #71cbf4;
 }
 
 .footer-logo {
-    height: 30px; /* Pas dit aan aan de gewenste hoogte */
+    height: 40px; /* Pas dit aan aan de gewenste hoogte */
     margin-right: 20px;
 }
 

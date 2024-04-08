@@ -1,7 +1,8 @@
-//
+<!--
 Auteur: Arvind Manodat
-Datum: 9-4-2024.
-//
+Datum: 9-4-2024
+-->
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
