@@ -2,75 +2,103 @@
 Auteur: Danijel Jovanovic
 Datum: 9-4-2024.
 */
+/* Stijl voor de navigatiebalk */
 .navbar
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #71cbf4;
+    background-color: #71cbf4; /* Achtergrondkleur van de navigatiebalk */
 }
 
-.nav-links {
+/* Stijl voor de lijst met navigatielinks */
+.nav-links
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.nav-links li {
+/* Stijl voor elk navigatielinkitem */
+.nav-links li
+{
     display: inline;
     margin-right: 20px;
 }
 
-.nav-links li:last-child {
+/* Stijl voor het laatste navigatielinkitem */
+.nav-links li:last-child
+{
     margin-right: 0;
 }
 
-.nav-links li a {
+/* Stijl voor de navigatielinks */
+.nav-links li a
+{
     text-decoration: none;
     color: white;
 }
 
-.logo {
-    height: 50px; /* aanpassen aan de gewenste hoogte */
+/* Stijl voor het logo */
+.logo
+{
+    height: 50px; /* Hoogte van het logo */
 }
-.header-img {
+
+/* Stijl voor de afbeelding in de header */
+.header-img
+{
     width: 100%;
 }
 
-.container {
+/* Stijl voor de algemene container */
+.container
+{
     max-width: 800px;
-    margin: 50px auto;
+    margin: 50px auto; /* Boven- en ondermarge */
     padding: 20px;
-    background-color: #71cbf4; /* blauwe achtergrondkleur */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #71cbf4; /* Blauwe achtergrondkleur */
+    border-radius: 8px; /* Afgeronde hoeken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lichtgrijze schaduw */
 }
 
-h2 {
+/* Stijl voor koppen */
+h2
+{
     text-align: center;
-    color: #333;
+    color: #333; /* Donkergrijze tekstkleur */
 }
 
-.resultaten {
+/* Stijl voor de resultaten */
+.resultaten
+{
     text-align: center;
 }
 
-.resultaten img {
+/* Stijl voor afbeeldingen binnen resultaten */
+.resultaten img
+{
     max-width: 100%;
     margin-top: 20px;
 }
 
-@media screen and (max-width: 414px) {
-    .navbar {
+/* Media query voor schermen met een maximale breedte van 414px */
+@media screen and (max-width: 414px)
+{
+    /* Aangepaste stijlen voor kleinere schermen */
+    .navbar
+    {
         padding: 10px 6px; /* Aangepaste padding voor kleinere schermen */
     }
 
-    .nav-links li a {
-        font-size: 9px;
+    .nav-links li a
+    {
+        font-size: 9px; /* Aangepaste lettergrootte voor navigatielinks */
     }
 
-    .logo {
+    .logo
+    {
         height: 20px; /* Aangepaste hoogte voor kleinere schermen */
     }
 }
