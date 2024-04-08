@@ -13,7 +13,7 @@ Datum: 9-4-2024
     <script src="../scripts/script.js" defer> </script>
 </head>
 <body>
-<div class="navbar" style="background-color: #71cbf4;">
+<div class="navbar">
     <img src="../images/logo.png" alt="Logo" class="logo">
     <ul class="nav-links">
         <li><a href="../index.php">Home</a></li>
@@ -136,7 +136,7 @@ Datum: 9-4-2024
             <input type="email" name="email" placeholder="Vul je e-mailadres in" required>
             <button type="submit">Aanmelden</button>
         </form>
-        <div class="navbarOnder" style="background-color: #71cbf4;">
+        <div class="navbarOnder">
     </div>
 </div>
 </body>
