@@ -96,13 +96,6 @@ echo "<p>Bedankt dat je de tijd neemt om onze vragenlijst in te vullen. Jouw fee
 
     );
 
-    // Punten voor elke vraag
-    $punten = array(
-        "Geef uw naam:" => 1, // Voorbeeld: geef 1 punt voor het invullen van de naam
-        "Hoeveel dagen gaat u op vakantie?" => 1, // Voeg hier punten toe voor andere vragen
-        // Voeg voor elke vraag in de vragenlijst punten toe volgens jouw criteria
-    );
-
     // Totaal aantal punten
     $totaalPunten = 0;
 
@@ -118,8 +111,8 @@ echo "<p>Bedankt dat je de tijd neemt om onze vragenlijst in te vullen. Jouw fee
 
         } elseif ($i == 1) {
             // Toon antwoordopties voor vraag 2
-            echo "<select name='antwoord$i'>";
-            echo "<option value='' selected>Klik hier om jouw antwoord te selecteren</option>";
+            echo "<select name='antwoord$i' required>";
+            echo "<option value='' selected disabled hidden>Klik hier om jouw antwoord te selecteren</option>";
             foreach ($opties[$i] as $optie) {
                 echo "<option value='" . $optie . "'>" . $optie . "</option>";
             }
@@ -131,8 +124,8 @@ echo "<p>Bedankt dat je de tijd neemt om onze vragenlijst in te vullen. Jouw fee
             echo "<input type='text' name='antwoord$i' required><br>";
         } else {
             // Toon een dropdownmenu voor andere vragen
-            echo "<select name='antwoord$i'>";
-            echo "<option value='' selected>Klik hier om jouw antwoord te selecteren</option>";
+            echo "<select name='antwoord$i' required>";
+            echo "<option value='' selected disabled hidden>Klik hier om jouw antwoord te selecteren</option>";
 
             foreach ($opties[$i] as $optie) {
                 echo "<option value='" . $optie . "'>" . $optie . "</option>";
@@ -144,40 +137,6 @@ echo "<p>Bedankt dat je de tijd neemt om onze vragenlijst in te vullen. Jouw fee
     <input type="submit" name="submit" value="Verzend">
 </form>
 
-<?php
-// Voeg hier de PHP-code toe voor het verwerken van de antwoorden en de punten op resultaten.php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Array om antwoorden op te slaan
-    $antwoorden = array();
-
-    // Loop door de antwoorden en sla ze op in de array
-    for ($i = 0; $i < count($vragen); $i++) {
-        // Controleer of de vraag is beantwoord
-        if (isset($_POST["antwoord$i"])) {
-            // Voeg het antwoord toe aan de array
-            $antwoorden[$vragen[$i]] = $_POST["antwoord$i"];
-            // Controleer of de vraag correct is beantwoord en voeg punten toe aan het totaal
-            if (isset($punten[$vragen[$i]])) {
-                $totaalPunten += $punten[$vragen[$i]];
-            }
-        } else {
-            // Geef een standaardwaarde als het antwoord niet is ingediend
-            $antwoorden[$vragen[$i]] = "Geen antwoord gegeven";
-        }
-    }
-
-    // Hier kun je de antwoorden verder verwerken, bijvoorbeeld opslaan in een database of afdrukken
-    // Afdrukken van de antwoorden ter controle
-    echo "<h2>Ontvangen antwoorden:</h2>";
-    foreach ($antwoorden as $vraag => $antwoord) {
-        echo "<p><strong>$vraag:</strong> $antwoord</p>";
-    }
-
-    // Afdrukken van het totaal aantal punten
-    echo "<h2>Totaal aantal punten:</h2>";
-    echo "<p>$totaalPunten</p>";
-}
-?>
-
 </body>
 </html>
+

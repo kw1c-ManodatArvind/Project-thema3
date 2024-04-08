@@ -1,7 +1,4 @@
-//
-Auteur: Danijel Jovanovic
-Datum: 9-4-2024
-//
+
 <?php
 session_start();
 // Definieer de vragen
