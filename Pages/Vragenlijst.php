@@ -6,22 +6,22 @@ Datum: 9-4-2024
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tui website</title>
-    <link rel="stylesheet" href="../styles/Vragenlijst.css">
-    <script src="../scripts/script.js" defer></script>
+    <meta charset="UTF-8"> <!-- UTF-8 tekenset voor internationale tekens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport instellingen voor responsief ontwerp -->
+    <title>Tui website</title> <!-- Titel van de pagina -->
+    <link rel="stylesheet" href="../styles/Vragenlijst.css"> <!-- Koppeling naar CSS-bestand voor vragenlijst -->
+    <script src="../scripts/script.js" defer></script> <!-- Koppeling naar JavaScript-bestand met uitstelde uitvoering -->
 </head>
 <body>
-<div class="navbar" style="background-color: #71cbf4;">
-    <a href="../index.php"><img src="../images/logo.png" alt="Logo" class="logo"></a>
-    <button class="menu-toggle" aria-label="Menu openen/sluiten">&#9776;</button>
-    <ul class="nav-links">
-        <li><a href="../index.php">Home</a></li>
-        <li><a href="resultaten.php">Resultaten</a></li>
-        <li><a href="ServiceContact.php">Service & Contact</a></li>
-        <li><a href="Vliegtickets.php">Vliegtickets</a></li>
-        <li><a href="Vragenlijst.php">Vragenlijst</a></li>
+<div class="navbar" style="background-color: #71cbf4;"> <!-- Navigatiebalk met aangepaste achtergrondkleur -->
+    <a href="../index.php"><img src="../images/logo.png" alt="Logo" class="logo"></a> <!-- TUI-logo met link naar Home -->
+    <button class="menu-toggle" aria-label="Menu openen/sluiten">&#9776;</button> <!-- Knop voor het openen/sluiten van het menu -->
+    <ul class="nav-links"> <!-- Navigatielinks -->
+        <li><a href="../index.php">Home</a></li> <!-- Link naar Home -->
+        <li><a href="resultaten.php">Resultaten</a></li> <!-- Link naar Resultaten -->
+        <li><a href="ServiceContact.php">Service & Contact</a></li> <!-- Link naar Service & Contact -->
+        <li><a href="Vliegtickets.php">Vliegtickets</a></li> <!-- Link naar Vliegtickets -->
+        <li><a href="Vragenlijst.php">Vragenlijst</a></li> <!-- Link naar Vragenlijst -->
     </ul>
 </div>
 
