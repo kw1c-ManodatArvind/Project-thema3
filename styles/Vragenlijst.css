@@ -47,7 +47,8 @@ body
 }
 
 /* Stijl voor de vragenlijst */
-h2 {
+h2
+{
     color: #005898; /* TUI blauw */
     font-size: 24px; /* Tekengrootte */
     margin-top: 20px; /* Bovenmarge van 20px */
