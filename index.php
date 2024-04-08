@@ -11,7 +11,7 @@ Datum: 9-4-2024.
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<div class="navbar" style="background-color: #71cbf4;">
+<div class="navbar">
     <a href="index.php"><img src="images/logo.png" alt="Logo" class="logo"></a>
     <ul class="nav-links">
         <li><a href="index.php">Home</a></li>

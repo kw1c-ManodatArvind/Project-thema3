@@ -1,4 +1,4 @@
-<div class="footer" style="background-color: #71cbf4;">
+<div class="footer">
     <img src="images/logo.png" alt="Footer Logo" class="footer-logo">
 </div>
 
