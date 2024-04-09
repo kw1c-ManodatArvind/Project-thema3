@@ -4,6 +4,7 @@
 */
 
 /* Algemene opmaak voor de body van de website */
+/* Algemene opmaak voor de body van de website */
 body
 {
     font-family: 'Themundayfreeversion-Regular', Arial, sans-serif; /* Gebruik het nieuwe lettertype, met back-ups van generieke lettertypes */
@@ -13,7 +14,7 @@ body
 @font-face
 {
     font-family: 'Themundayfreeversion-Regular'; /* Geef een naam aan het lettertype */
-    src: url('../fonts/Themundayfreeversion-Regular.ttf') format('truetype'); /* Geef het pad naar het font-bestand en het formaat op */
+    src: url('../fonts/Raleway-Medium.ttf') format('truetype'); /* Geef het pad naar het font-bestand en het formaat op */
     font-weight: normal; /* Specificeer dat het lettertype normaal gewicht heeft */
 }
 

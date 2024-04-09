@@ -5,10 +5,21 @@ Datum: 9-4-2024.
 /* Verbeterde achtergrond */
 
 /* Verbeterde achtergrond */
+/* Algemene opmaak voor de body van de website */
 body
 {
-    background-color: #f0f0f0; /* Lichtgrijs */
+    font-family: 'Themundayfreeversion-Regular', Arial, sans-serif; /* Gebruik het nieuwe lettertype, met back-ups van generieke lettertypes */
+    background-color: #f0f0f0;
 }
+
+/* Definieer aangepaste lettertype met bron en gewicht */
+@font-face
+{
+    font-family: 'Themundayfreeversion-Regular'; /* Geef een naam aan het lettertype */
+    src: url('../fonts/Raleway-Medium.ttf') format('truetype'); /* Geef het pad naar het font-bestand en het formaat op */
+    font-weight: normal; /* Specificeer dat het lettertype normaal gewicht heeft */
+}
+
 
 /* TUI-stijl voor de navbar */
 .navbar
