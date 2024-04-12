@@ -21,7 +21,7 @@ Datum: 9-4-2024
         <li><a href="ServiceContact.php">Service & Contact</a></li> <!-- Link naar de service- en contactpagina -->
         <li><a href="Vliegtickets.php">Vliegtickets</a></li> <!-- Link naar de vliegticketspagina -->
         <li><a href="Vragenlijst.php">Vragenlijst</a></li> <!-- Link naar de vragenlijstpagina -->
-        <!-- Voeg hier eventueel extra navigatielinks toe -->
+
     </ul>
 </div>
 <div class="container"> <!-- Hoofdcontainer van de pagina -->
