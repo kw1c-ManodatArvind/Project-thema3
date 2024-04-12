@@ -123,6 +123,8 @@ Datum: 9-4-2024
         $totaalPunten = $_SESSION['totaalPunten']; // Haalt het totale aantal punten op uit de sessie
     }
 
+
+
     function bepaalReisadvies($punten_per_land, $behaaldePunten) { // Functie om het reisadvies te bepalen op basis van behaalde punten
         foreach ($punten_per_land as $land => $punten) { // Itereert over alle landen en bijbehorende punten
             if (in_array($behaaldePunten, $punten)) { // Controleert of het aantal behaalde punten binnen het bereik van het land valt
