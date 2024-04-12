@@ -1,4 +1,4 @@
-// Auteur: Danijel Jovanovic
+// Auteur: Danijel Jovanovic en Arvind Manodat
 // Datum: 9-4-2024
 
 // Event listener toevoegen aan de menu-toggle knop

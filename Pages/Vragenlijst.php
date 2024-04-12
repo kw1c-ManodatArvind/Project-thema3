@@ -1,13 +1,13 @@
 <!--
-Auteur: Danijel Jovanovic
+Auteur: Danijel Jovanovic en Arvind Manodat
 Datum: 9-4-2024
 -->
 
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"> <!-- UTF-8 tekenset voor internationale tekens -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport instellingen voor responsief ontwerp -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tui website</title> <!-- Titel van de pagina -->
     <link rel="stylesheet" href="../styles/Vragenlijst.css"> <!-- Koppeling naar CSS-bestand voor vragenlijst -->
     <script src="../scripts/script.js" defer></script> <!-- Koppeling naar JavaScript-bestand met uitstelde uitvoering -->
@@ -76,7 +76,7 @@ echo "<p>Bedankt dat je de tijd neemt om onze vragenlijst in te vullen. Jouw fee
         "",
         array("1-7 dagen", "8-14 dagen", "15-21 dagen", "Meer dan 21 dagen"),
         array("Minder dan eens per jaar", "Eens per jaar", "Meerdere keren per jaar", "Eens per maand"),
-        array("Europa", "Azië", "Amerika", "Afrika", "Oceanië"),
+        array("Europa", "Azië", "Amerika", "Afrika"),
         array("Hotel", "Appartement", "Villa", "Camping"),
         array("Prijs", "Weer", "Cultuur", "Natuur"),
         array("Minder dan een maand", "1-3 maanden", "3-6 maanden", "Meer dan 6 maanden"),
@@ -87,7 +87,7 @@ echo "<p>Bedankt dat je de tijd neemt om onze vragenlijst in te vullen. Jouw fee
         array("Wandelen", "Strandactiviteiten", "Stadsbezoek", "Avontuurlijke activiteiten"),
         array("Heel belangrijk", "Redelijk belangrijk", "Niet zo belangrijk", "Niet belangrijk"),
         array("Zonnig", "Regen" ,"Bewolkt" ,"Sneeuw"),
-        array("Europa", "Azië", "Amerika", "Afrika", "Oceanië"),
+        array("Europa", "Azië", "Amerika", "Afrika"),
         array("0-500 km", "500-1000 km","1000-1500 km"," Verder dan 1500 km"),
         array("Ja", "Nee"),
         array("Ja", "Nee"),

@@ -1,5 +1,5 @@
 <!--
-Auteur: Arvind Manodat
+Auteur: Danijel Jovanovic en Arvind Manodat
 Datum: 9-4-2024
 -->
 
@@ -7,8 +7,8 @@ Datum: 9-4-2024
 <html lang="nl"> <!-- Begint het HTML-document en geeft de taal aan -->
 
 <head>
-    <meta charset="UTF-8"> <!-- Definieert de tekenset van het document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Definieert de viewport voor responsief gedrag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tui website</title> <!-- Titel van de pagina -->
     <link rel="stylesheet" href="styles/styles.css"> <!-- Koppelt het CSS-bestand aan -->
 </head>
