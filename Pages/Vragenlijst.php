@@ -6,8 +6,8 @@ Datum: 9-4-2024
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"> <!-- UTF-8 tekenset voor internationale tekens -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport instellingen voor responsief ontwerp -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tui website</title> <!-- Titel van de pagina -->
     <link rel="stylesheet" href="../styles/Vragenlijst.css"> <!-- Koppeling naar CSS-bestand voor vragenlijst -->
     <script src="../scripts/script.js" defer></script> <!-- Koppeling naar JavaScript-bestand met uitstelde uitvoering -->

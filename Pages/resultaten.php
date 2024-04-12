@@ -6,8 +6,8 @@ Datum: 9-4-2024
 <!DOCTYPE html> <!-- Definieert het documenttype als HTML -->
 <html lang="nl"> <!-- Geeft de taal van de pagina aan -->
 <head>
-    <meta charset="UTF-8"> <!-- Definieert de tekenset van de pagina -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Maakt de pagina responsive op verschillende apparaten -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> apparaten -->
     <title>Tui website</title> <!-- Titel van de pagina -->
     <link rel="stylesheet" href="../styles/resultaten.css"> <!-- Koppelt het CSS-bestand voor de resultatenpagina -->
     <!-- Voeg hier eventuele extra CSS-bestanden toe -->
@@ -60,7 +60,7 @@ Datum: 9-4-2024
         "Verenigde Staten" => range(82, 102),
         "Kenia" => range(103, 123),
         "Australië" => range(124, 144),
-        // Voeg hier andere landen en bijbehorende puntenbereiken toe
+
     );
 
     $land_afbeeldingen = array(
@@ -69,7 +69,7 @@ Datum: 9-4-2024
         "Verenigde Staten" => "../images/Usa.jpg",
         "Kenia" => "../images/Kenia.jpg",
         "Australië" => "../images/Australie.jpg",
-        // Voeg hier andere landen en bijbehorende afbeeldingen toe
+
     );
 
     $land_links = array(
@@ -78,7 +78,7 @@ Datum: 9-4-2024
         "Verenigde Staten" => "https://www.nederlandwereldwijd.nl/reisadvies/verenigde-staten-van-amerika",
         "Kenia" => "https://www.tourcompass.nl/kenia/reizen.htm?msclkid=9ef81f4ce7181c993c5b7943161a8b60&utm_source=bing&utm_medium=cpc&utm_campaign=1%20AFRICA%3A%20Kenya&utm_term=%2Bkenia%20%2Brondreis&utm_content=Kenia%20Rondreis",
         "Australië" => "https://www.tourcompass.nl/australie/reizen/hoogtepunten-van-australie-met-sydney-uluru-en-cairns.htm?msclkid=096b1b439e9b1d42a4f17d4c6fc358f6&utm_source=bing&utm_medium=cpc&utm_campaign=4%20OCEAN%3A%20Australia&utm_term=australi%C3%AB%20reizen&utm_content=Australi%C3%AB%20reizen.",
-        // Voeg hier andere landen en bijbehorende links toe
+
     );
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") { // Controleert of het verzoekstype POST is

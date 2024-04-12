@@ -3,19 +3,18 @@
    Datum: 9-4-2024
 */
 
-/* Algemene opmaak voor de body van de website */
+
 body
 {
     font-family: 'Themundayfreeversion-Regular', Arial, sans-serif; /* Gebruik het nieuwe lettertype, met back-ups van generieke lettertypes */
     text-align: center;
 }
 
-/* Definieer aangepaste lettertype met bron en gewicht */
 @font-face
 {
     font-family: 'Themundayfreeversion-Regular'; /* Geef een naam aan het lettertype */
     src: url('../fonts/Raleway-Medium.ttf') format('truetype'); /* Geef het pad naar het font-bestand en het formaat op */
-    font-weight: normal; /* Specificeer dat het lettertype normaal gewicht heeft */
+    font-weight: normal;
 }
 
 /* Opmaak voor de navigatiebalk */
@@ -81,7 +80,7 @@ body
     display: inline-block; /* Zet de rijen naast elkaar */
     vertical-align: top;
     margin: 0 10px; /* Ruimte tussen de rijen */
-    text-align: left; /* Links uitlijnen van de links */
+    text-align: left;
 }
 
 /* Opmaak voor koppen in decoratieve links */

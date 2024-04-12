@@ -3,7 +3,6 @@
    Datum: 9-4-2024
 */
 
-/* Algemene opmaak voor de body van de website */
 body
 {
     font-family: 'Themundayfreeversion-Regular', Arial, sans-serif; /* Gebruik het nieuwe lettertype, met back-ups van generieke lettertypes */
@@ -309,7 +308,7 @@ hr
     .column
     {
         margin-right: 0; /* Verwijder de rechtermarge van de kolommen voor kleinere schermen */
-        margin-bottom: 20px; /* Voeg een bodemmarge toe aan de kolommen voor kleinere schermen */
+        margin-bottom: 20px;
     }
 
     .image-wrapper
@@ -320,7 +319,7 @@ hr
     .image-wrapper p
     {
         margin-left: 0; /* Verwijder de linker marge van de tekst naast de afbeeldingen voor kleinere schermen */
-        margin-top: 10px; /* Voeg een bovenmarge toe aan de tekst naast de afbeeldingen voor kleinere schermen */
+        margin-top: 10px;
     }
 
     #curacao

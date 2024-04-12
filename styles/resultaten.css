@@ -3,7 +3,6 @@ Auteur: Danijel Jovanovic en Arvind Manodat
 Datum: 9-4-2024.
 */
 
-/* Algemene opmaak voor de body van de website */
 body
 {
     font-family: 'Themundayfreeversion-Regular', Arial, sans-serif; /* Gebruik het nieuwe lettertype, met back-ups van generieke lettertypes */
@@ -14,7 +13,7 @@ body
 {
     font-family: 'Themundayfreeversion-Regular'; /* Geef een naam aan het lettertype */
     src: url('../fonts/Raleway-Medium.ttf') format('truetype'); /* Geef het pad naar het font-bestand en het formaat op */
-    font-weight: normal; /* Specificeer dat het lettertype normaal gewicht heeft */
+    font-weight: normal;
 }
 
 /* Stijl voor de navigatiebalk */
@@ -74,7 +73,7 @@ body
     margin: 50px auto; /* Boven- en ondermarge */
     padding: 20px;
     background-color: #71cbf4; /* Blauwe achtergrondkleur */
-    border-radius: 8px; /* Afgeronde hoeken */
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lichtgrijze schaduw */
 }
 
