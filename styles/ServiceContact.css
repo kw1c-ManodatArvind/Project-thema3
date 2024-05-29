@@ -1,5 +1,5 @@
 /*
-   Auteur: Danijel Jovanovic en Arvind Manodat
+   Auteur: Danijel Jovanovic
    Datum: 9-4-2024
 */
 
@@ -145,25 +145,30 @@ body
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px; /* Ruimte tussen de boxen */
 }
 
 /* Opmaak voor individuele hulpmogelijkheid */
 .help-option
 {
-    width: calc(33.33% - 10px);
+    flex: 1 1 calc(33.33% - 20px); /* Drie gelijke kolommen met ruimte ertussen */
+    max-width: calc(33.33% - 20px); /* Maximale breedte van de box */
     margin-bottom: 20px;
     text-align: center;
     background-color: #71cbf4; /* Lichtblauwe achtergrondkleur */
     border: 2px solid navy; /* Rand rondom het vlakje */
     padding: 20px; /* Ruimte binnen het vlakje */
-    border-radius: 5px; /* Afgeronde hoeken */
+    border-radius: 10px; /* Meer afgeronde hoeken voor een modernere look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Voeg een lichte schaduw toe voor diepte */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Voeg overgangseffecten toe */
     color: navy; /* Tekstkleur */
 }
 
 /* Opmaak voor hover-effect op hulpmogelijkheid */
 .help-option:hover
 {
-    background-color: rgba(113, 203, 244, 0.5); /* Toon een lichte achtergrondkleur bij hover */
+    background-color: rgba(113, 203, 244, 0.8); /* Toon een lichte achtergrondkleur bij hover */
+    transform: translateY(-5px); /* Verplaats de box iets omhoog bij hover */
 }
 
 /* Opmaak voor koppen en alinea's over TUI */
@@ -352,3 +357,4 @@ body
         width: 300px;
     }
 }
+

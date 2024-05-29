@@ -1,6 +1,6 @@
 
 <!--
-Auteur: Danijel Jovanovic en Arvind Manodat
+Auteur: Danijel Jovanovic
 Datum: 9-4-2024
 -->
 

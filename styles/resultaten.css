@@ -1,5 +1,5 @@
 /*
-Auteur: Danijel Jovanovic en Arvind Manodat
+Auteur: Danijel Jovanovic
 Datum: 9-4-2024.
 */
 
@@ -100,15 +100,13 @@ h2
 /* Media query voor schermen met een maximale breedte van 414px */
 @media screen and (max-width: 414px)
 {
-    /* Aangepaste stijlen voor kleinere schermen */
-    .navbar
-    {
+    .navbar {
         padding: 10px 6px; /* Aangepaste padding voor kleinere schermen */
     }
 
     .nav-links li a
     {
-        font-size: 9px; /* Aangepaste lettergrootte voor navigatielinks */
+        font-size: 8px;
     }
 
     .logo

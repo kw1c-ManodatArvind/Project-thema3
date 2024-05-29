@@ -7,10 +7,9 @@ Datum: 9-4-2024
 <html lang="nl"> <!-- Geeft de taal van de pagina aan -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> apparaten -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tui website</title> <!-- Titel van de pagina -->
     <link rel="stylesheet" href="../styles/resultaten.css"> <!-- Koppelt het CSS-bestand voor de resultatenpagina -->
-    <!-- Voeg hier eventuele extra CSS-bestanden toe -->
 </head>
 <body>
 <div class="navbar"> <!-- Navigatiebalk -->

@@ -1,5 +1,5 @@
 /*
-   Auteur: Danijel Jovanovic en Arvind Manodat
+   Auteur: Danijel Jovanovic
    Datum: 9-4-2024
 */
 
@@ -81,6 +81,8 @@ body
     text-align: right; /* Uitlijnen van de tekst rechts */
 }
 
+
+
 /* Opmaak voor individuele kleine vakken */
 .small-box
 {
@@ -88,22 +90,48 @@ body
     height: 50px; /* Pas de hoogte aan zoals gewenst */
     background-color: aliceblue;
     border: 1px solid #ccc;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 175px;
+    padding-right: 175px;
     box-sizing: border-box;
     margin-bottom: 10px; /* Voeg ondermarge toe tussen de vakken */
+    border-radius: 10px; /* Afgeronde hoeken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lichte schaduw */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Overgangseffecten */
 }
 
 /* Opmaak voor hover-effect op kleine vakken */
 .small-box:hover
 {
     background-color: lightblue; /* Verander de achtergrondkleur naar lichtblauw wanneer gehoverd */
+    transform: translateY(-5px); /* Verplaats de box iets omhoog bij hover */
 }
 
 /* Opmaak voor tekst binnen kleine vakken */
 .small-box p {
 
     margin: 0;
+}
+
+/* Opmaak voor individuele blauwe vakken */
+.blue-box
+{
+    background-color: #71cbf4;
+    color: white;
+    padding: 20px;
+    border-radius: 10px; /* Afgeronde hoeken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lichte schaduw */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Overgangseffecten */
+    text-align: center; /* Tekst centreren */
+    display: flex; /* Flexbox gebruiken */
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+}
+
+/* Opmaak voor hover-effect op blauwe vakken */
+.blue-box:hover
+{
+    background-color: rgba(113, 203, 244, 0.8); /* Verander de achtergrondkleur naar lichtblauw wanneer gehoverd */
+    transform: translateY(-5px); /* Verplaats de box iets omhoog bij hover */
 }
 
 /* Opmaak voor vierkante afbeeldingen */
